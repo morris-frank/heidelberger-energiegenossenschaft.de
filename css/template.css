@@ -147,7 +147,15 @@ body {
   
   /* Mobile */
   @media (max-width: 1199px) {
-  
+
+    #fav-logo {
+        padding: 37px 0 0;
+    }
+
+  }
+
+  @media (max-width: 767px) {
+
     .row #fav-logo {
       width: 100%;
       padding-top: 0;
