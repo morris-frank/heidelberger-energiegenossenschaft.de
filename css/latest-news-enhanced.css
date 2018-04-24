@@ -1,0 +1,28 @@
+#lnee_107 ul.latestnews-items {
+    list-style-type: none !important;
+}
+
+.lnee ul.latestnews-items li.latestnews-item {
+    margin-bottom: 3em;
+}
+
+
+@media (min-width: 768px) {
+    #lnee_107 .newshead .picture {
+        box-shadow: 2px 3px 1px rgba(0,0,0,0.1);
+    }
+    
+    #lnee_107 .head_left .newshead.picturetype {
+        margin-right: 2em;
+    }
+}
+
+@media (max-width: 767px) {
+    #lnee_107 .head_left .newshead {
+        float: none;
+    }
+
+    #lnee_107 .head_left .newshead.picturetype {
+        margin-bottom: 1em;
+    }
+}
