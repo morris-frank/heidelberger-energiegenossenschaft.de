@@ -175,6 +175,7 @@ body {
     z-index: 100;
     position: relative;
     float: right;
+    margin-top: 0.7em;
   }
   #fav-nav .moduletable {
     background: none;
@@ -331,7 +332,7 @@ body {
     }
     #fav-nav {
       float: none;
-      width: 100%;
+      display: flex;
       margin-left: 0;
       padding: 14px 0px;
       margin-top: 32px;
@@ -872,14 +873,6 @@ body {
   
   /* FAVSLIDER
   ---------------------------------------------------------------------------- */
-  
-  .favdemo .fav-control-nav {
-    bottom: 14px!important;
-  }
-  .favdemo div[id^="slider-"].favslider,
-  .favdemo div[id*=" slider-"].favslider {
-    margin-bottom: 10px!important;
-  }
   div[id^="slider-"].favslider,
   div[id*=" slider-"].favslider {
     position: relative;
@@ -943,28 +936,20 @@ body {
     }
     #fav-caption h3 {
       font-size: 26px;
-      margin-bottom: 0;
+      margin-bottom: 0.6em;
     }
-    .fav-direction-nav li .fav-next,
-    .favslider:hover .fav-direction-nav li .fav-next,
-    .fav-direction-nav li .fav-prev,
-    .favslider:hover .fav-direction-nav li .fav-prev {
-      top: 50%;
-    }
-  
   }
   
   @media handheld, only screen and (max-width: 600px) {
   
     #fav-caption {
-      top: 30%;
+      top: 19%;
     }
     #fav-caption h3 {
-      font-size: 24px;
+      font-size: 1.2em;
     }
     #fav-caption p {
-      font-size: 16px;
-      margin-bottom: 0;
+      font-size: 0.9em;
     }
   
   }
@@ -972,26 +957,21 @@ body {
   @media handheld, only screen and (max-width: 480px) {
   
     #fav-caption {
-      top: 20%;
-      padding: 7px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      padding-top: 17%;
     }
     #fav-caption h3 {
-      font-size: 21px;
+      font-size: 1em;
     }
     #fav-caption p {
-      font-size: 12px;
+      font-size: 0.8em;
     }
-  
-  }
-  
-  @media handheld, only screen and (max-width: 320px) {
-  
-    #fav-caption {
-      top: 10%;
-      padding: 7px;
-    }
-    #fav-caption h3 {
-      font-size: 18px;
+
+    .fav-direction-nav {
+      display: none;
     }
   
   }
@@ -1134,6 +1114,19 @@ body {
   }
 
   /* Maurice var extra */
+  cite {
+    display: block;
+    font-size: 0.9em;
+  }
+
+  cite::before {
+    content: '\2014 \0020'
+  }
+
+  li cite {
+    text-indent: 1em;
+  }
+
   .item-page ul li.latestnews-item::before {
     content: '';
     display: none;
@@ -1144,4 +1137,26 @@ body {
       float: none !important;
       width: 100%;
     }
+  }
+
+  .moduletable_waeldchen {
+    background-position: center;
+    background-image: url(/images/banners/baum-hand.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .moduletable_waeldchen a{
+    color: white;
+    text-shadow: 0px 1px 0px #222, 0 0px 4px #666;
+  }
+
+  #fav-navbar .navbar-inner {
+    background-image: none;
+    border-radius: 0;
+  }
+
+  #fav-navbar .navbar-inner .btn-navbar {
+    background-image: none;
+    border-radius: 0;
   }

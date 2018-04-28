@@ -1680,10 +1680,10 @@ div.edit .btn-group > .btn:last-child {
 .moduletable,
 div[class^="moduletable-"],
 div[class*=" moduletable-"] {
-	text-align: justify;
 	overflow: hidden;
 	margin-top: 10px;
-	margin-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Moduletable Title
@@ -1692,13 +1692,10 @@ div[class*=" moduletable-"] {
 .moduletable h3 {
 	font-size: 24px;
 	color: #444;
-	text-transform: uppercase;
-	border-bottom: 1px solid #ddd;
 	font-weight: 300;
   line-height: 1.3em;
-  margin-bottom: 19px;
+  margin-bottom: 0.4em;
   margin-top: 6px;
-	padding-bottom: 6px;
 }
 .moduletable .custom h3,
 div[class^="moduletable-"] div[class^="custom-"] h3,
