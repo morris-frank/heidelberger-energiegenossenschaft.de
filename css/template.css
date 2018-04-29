@@ -1149,15 +1149,15 @@ body {
   }
 
   .moduletable_waeldchen {
-    background-position: center;
-    background-image: url(/images/banners/baum-hand.jpg);
-    background-repeat: no-repeat;
     text-align: center;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #78D200, #BED200);
   }
   
-  .moduletable_waeldchen a{
+  .moduletable_waeldchen, .moduletable_waeldchen a{
     color: white;
-    text-shadow: 0px 1px 0px #222, 0 0px 4px #666;
+    text-shadow: 2px 2px 0px #758d1b;
   }
 
   #fav-navbar .navbar-inner {
