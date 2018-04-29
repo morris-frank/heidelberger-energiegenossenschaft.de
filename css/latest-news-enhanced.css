@@ -26,3 +26,7 @@
         margin-bottom: 1em;
     }
 }
+
+.onecatlink.last.nostyle {
+    display: none;
+}

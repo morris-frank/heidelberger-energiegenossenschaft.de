@@ -906,12 +906,12 @@ body {
     cursor: pointer;
   }
   #fav-caption h3 {
-    font-size: 36px;
+    font-size: 31px;
     color: #333;
     margin: 6px 0 4px;
     padding: 0;
     line-height: 1.2em;
-    text-transform: uppercase;
+    text-transform: none;
     text-align:center;
     font-weight: 300;
     border: none;
@@ -1114,6 +1114,15 @@ body {
   }
 
   /* Maurice var extra */
+  /* I DONT Fucking know why this hack is necessary Oo, old bootrap version is buggy af */
+  .row {
+    margin-left: 0!important;
+  }
+
+  #fav-main ul, #fav-main ol {
+    margin: 0;
+  }
+
   cite {
     display: block;
     font-size: 0.9em;
@@ -1159,4 +1168,10 @@ body {
   #fav-navbar .navbar-inner .btn-navbar {
     background-image: none;
     border-radius: 0;
+  }
+
+  @media (min-width: 768px) {
+    .fav-control-nav {
+      display: none;
+    }
   }
