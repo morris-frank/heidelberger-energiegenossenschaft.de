@@ -1132,6 +1132,10 @@ body {
     content: '\2014 \0020'
   }
 
+  .span4 cite {
+    margin-bottom: 2em;
+  }
+  
   li cite {
     text-indent: 1em;
   }
