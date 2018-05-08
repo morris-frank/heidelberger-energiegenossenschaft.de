@@ -59,7 +59,7 @@ $pageclass = $params->get( 'pageclass_sfx' );
 	<?php // Google Analytics Tracking Code
 	if($analyticsCode) {echo '<script type="text/javascript">'; echo $analyticsCode; echo '</script>';}?>
 
-	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/backtop/backtop.js"></script>
+	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/misc.js"></script>
 
 </head>
 
