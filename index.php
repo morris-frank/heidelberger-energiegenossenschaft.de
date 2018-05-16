@@ -56,9 +56,6 @@ $pageclass = $params->get( 'pageclass_sfx' );
 	<?php // Parameters
 	require("admin/params.php"); ?>
 
-	<?php // Google Analytics Tracking Code
-	if($analyticsCode) {echo '<script type="text/javascript">'; echo $analyticsCode; echo '</script>';}?>
-
 	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/misc.js"></script>
 
 </head>
@@ -842,75 +839,6 @@ $pageclass = $params->get( 'pageclass_sfx' );
 					</div>
 				</div>
 			</div>
-
-			<!-- Copyright -->
-			<?php if($this->countModules('copyright1') || $this->countModules('copyright2') || $showCopyright) : ?>
-
-				<div class="container-fluid" id="fav-copyrightwrap">
-					<div class="row-fluid">
-
-							<?php $copyright=0;
-								if ($this->countModules('copyright1') && $this->countModules('copyright2')) $copyright=1;
-								if ($this->countModules('copyright2') && $showCopyright) $copyright=2;
-								if ($this->countModules('copyright1') && $showCopyright) $copyright=3;
-								if ($this->countModules('copyright1') && $this->countModules('copyright2') && $showCopyright) $copyright=4;
-							?>
-
-							<?php if($this->countModules('copyright1') || $this->countModules('copyright2') || $showCopyright) : ?>
-
-								<div id="fav-copyright" class="clearfix">
-
-									<?php if (($showCopyright) !=0) : ?>
-										<div id="fav-showcopyright"
-											class="<?php
-											if ( $copyright == 2 ):echo ('span3');
-											elseif ( $copyright == 3 ):echo ('span3');
-											elseif ( $copyright == 4 ):echo ('span3');
-											else: echo ('span12'); endif; ?>">
-												<p>&#0169; <?php echo date('Y'); ?>
-
-													<a href="http://<?php echo htmlspecialchars($copyrightTextLink);?>" target="_blank">
-														<?php echo htmlspecialchars($copyrightText);?>
-													</a>
-
-												</p>
-
-										</div>
-									<?php endif; ?>
-
-									<?php if ($this->countModules('copyright1')): ?>
-											<div id="fav-copyright1"
-												class="<?php
-												if ( $copyright == 1 ):echo ('span3');
-												elseif ( $copyright == 3 ):echo ('span9');
-												elseif ( $copyright == 4 ):echo ('span6');
-												else: echo ('span12'); endif; ?>">
-
-												<jdoc:include type="modules" name="copyright1" style="icon" />
-
-											</div>
-									<?php endif; ?>
-
-												<?php if ($this->countModules('copyright2')): ?>
-										<div id="fav-copyright2"
-											class="<?php
-											if ( $copyright == 1 ):echo ('span9');
-											elseif ( $copyright == 2 ):echo ('span9');
-											elseif ( $copyright == 4 ):echo ('span3');
-											else: echo ('span12'); endif; ?>">
-
-											<jdoc:include type="modules" name="copyright2" style="icon" />
-
-										</div>
-									<?php endif; ?>
-
-								</div>
-							<?php endif; ?>
-
-					</div>
-				</div>
-
-			<?php endif; ?>
 
 			<!-- Debug -->
 			<?php if ($this->countModules('debug')) { ?>
