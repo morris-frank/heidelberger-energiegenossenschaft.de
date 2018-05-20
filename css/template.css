@@ -86,7 +86,6 @@ body {
     margin-bottom: 9px;
     padding-top: 7px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
   }
   
   /* Mobile */
@@ -837,7 +836,7 @@ body {
     width: 60%;
     padding: 21px;
     text-shadow: none;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.87);
     cursor: pointer;
   }
   #fav-caption h3 {
