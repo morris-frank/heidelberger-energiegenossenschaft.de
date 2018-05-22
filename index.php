@@ -36,7 +36,6 @@ $pageclass = $params->get( 'pageclass_sfx' );
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template;?>/icons/css/font-awesome.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template;?>/css/k2style.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template;?>/css/joomla.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template;?>/css/template.css" type="text/css" />
@@ -50,8 +49,11 @@ $pageclass = $params->get( 'pageclass_sfx' );
 		else { echo ""; } ?>
 
 	<!-- Google Font -->
-	<link href='http://fonts.googleapis.com/css?family=<?php echo ($this->params->get('googleFont')) ? $this->params->get('googleFont') : "Open+Sans"; ?>' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=<?php echo ($this->params->get('textLogoGoogleFont')) ? $this->params->get('textLogoGoogleFont') : "Open+Sans"; ?>' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=<?php echo ($this->params->get('googleFont')) ? $this->params->get('googleFont') : "Open+Sans"; ?>' rel='stylesheet' type='text/css' />
+
+	<!-- Font Awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
 
 	<?php // Parameters
 	require("admin/params.php"); ?>

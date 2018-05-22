@@ -187,7 +187,6 @@ span.icon-location:before,
 .icon-user:before,
 .icon-lock:before,
 .icon-save:before {
-  font-family: FontAwesome;
 }
 
 /* First and Previous Icons */
@@ -455,7 +454,6 @@ p.img_caption {
 
 dl.article-info {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #999999;
 }
@@ -468,7 +466,6 @@ dl.article-info [class*=" fa fa-"] {
 	margin-left: 0;
 }
 dt.article-info-term {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.3em;
@@ -547,8 +544,7 @@ span.content_vote input.btn.btn-mini {
   border: none;
 }
 .items-more .nav-tabs.nav-stacked > li > a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-right: 10px;
   color: #333;
 }
@@ -596,7 +592,6 @@ p.readmore a.btn {
   color: #444;
   margin-right: 1em;
   padding: 8px 12px 6px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -673,7 +668,6 @@ p.readmore a.btn {
   content: none!important;
 }
 .pagination p.counter.pull-right {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -738,8 +732,7 @@ ul.pager.pagenav li:before {
 .item ul li:before,
 .item-page ul li:before,
 .items-leading ul li:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-right: 10px;
   color: #333;
 }
@@ -923,8 +916,7 @@ span.subheading-category {
 ---------------------------------------------------------------------------------- */
 
 div.category-desc ul li:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-right: 10px;
   color: #333;
 }
@@ -936,7 +928,6 @@ div.category-desc ul li:before {
   padding-top: 12px;
 }
 .categories-list h4.item-title {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-weight: normal;
 }
@@ -956,8 +947,7 @@ div.category-desc ul li:before {
   margin-left: 0;
 }
 .categories-list ul li a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   font-weight: normal;
   padding-right: 10px;
   color: #333;
@@ -986,7 +976,6 @@ div.category-desc ul li:before {
   padding: 0;
 }
 .cat-children h3.page-header {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-weight: normal;
   font-size: 16px;
@@ -1015,8 +1004,7 @@ ul.category span.list-edit.pull-left.width-50 a {
   margin-right: 1em;
 }
 .category-list ul li a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   font-weight: normal;
   padding-right: 10px;
   color: #333;
@@ -1093,8 +1081,7 @@ ul.category.list-striped {
   list-style: none;
 }
 ul.category.list-striped li h3 a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-right: 10px;
   color: #333;
 }
@@ -1111,7 +1098,6 @@ ul.category.list-striped li h3 a:before {
 }
 .logout button.btn.btn-primary {
   padding: 8px 16px;
-  font-family: sans-serif;
   text-transform:none;
   text-shadow: none;
 }
@@ -1140,7 +1126,6 @@ div.profile {
 	margin-top: 14px;
 }
 div.profile legend {
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	line-height: 1.5em;
 	border: none;
@@ -1185,7 +1170,6 @@ div.profile dl.dl-horizontal dt {
 
 div.profile-edit button.btn.btn-primary.validate {
 	text-transform: none;
-	font-family: sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 }
@@ -1204,7 +1188,6 @@ div.profile-edit fieldset legend {
 
 div.registration button.btn.btn-primary.validate {
 	text-transform: none;
-	font-family: sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 }
@@ -1233,7 +1216,6 @@ div.remind fieldset div.control-group {
 }
 div.remind button.btn.btn-primary.validate {
   text-transform: none;
-  font-family: sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1260,7 +1242,6 @@ div.reset fieldset div.control-group {
 }
 div.reset button.btn.btn-primary.validate {
   text-transform: none;
-  font-family: sans-serif;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1297,7 +1278,6 @@ div.search button.btn.hasTooltip [class*=" fa fa-"] {
   padding-right: 2px;
 }
 div.search fieldset legend {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   padding-top: 14px;
@@ -1342,7 +1322,6 @@ div.search dd.result-created {
 ---------------------------------------------------------------------------- */
 
 div.contact fieldset legend {
-	font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 	font-size: 18px;
 	padding-top: 24px;
@@ -1384,7 +1363,6 @@ div.contact span.contact-emailto:before,
 div.contact span.contact-telephone:before,
 div.contact span.contact-fax:before,
 div.contact span.contact-mobile:before {
-  font-family: FontAwesome;
   font-size: 14px;
   padding-right: 10px;
   color: #444;
@@ -1426,8 +1404,7 @@ div.contact .nav-tabs li a:hover {
   border: none;
 }
 div.contact .nav-tabs li a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-right: 10px;
   color: #333;
 }
@@ -1436,7 +1413,6 @@ div.contact .nav-tabs li a:before {
 ---------------------------------------------------------------------------- */
 
 div.blog-featured fieldset legend {
-	font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 	font-size: 18px;
 	margin-bottom: 0;
@@ -1490,8 +1466,7 @@ div.contact-category ul.category.list-striped {
   margin-top: 14px;
 }
 div.contact-category ul.category.list-striped strong.list-title:before{
-	font-family: FontAwesome;
-	content: "\f105";
+	content: '›';
 	font-weight: normal;
 	padding-right: 10px;
 	color: #333;
@@ -1610,7 +1585,6 @@ div.weblink-category div.list-title img {
 
 div.edit .btn-group > .btn:last-child {
 	padding: 8px 12px 6px;
-	font-family: sans-serif;
 	text-transform: none;
 }
 
@@ -1752,7 +1726,6 @@ div[class^="moduletable-"] div[class*=" custom-"] ul li:before,
 div[class*=" moduletable-"] div[class*=" custom-"] ul li:before,
 div[class^="moduletable-"] ul.nav.menu li:before,
 div[class*=" moduletable-"] ul.nav.menu li:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
 }
@@ -1924,7 +1897,6 @@ div[id^="search-form"] button.btn.btn-primary,
 div[id*=" search-form"] button.btn.btn-primary {
   font-weight:normal;
   font-size: 14px;
-  font-family: sans-serif;
   text-transform: none;
   padding: 9px 16px 7px;
 }
@@ -1988,7 +1960,6 @@ ul[class*=" weblinks-"] {
 ul.weblinks li a:before,
 ul[class^="weblinks-"] li a:before,
 ul[class*=" weblinks-"] li a:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2025,7 +1996,6 @@ ul[class*=" archive-module-"] li {
 ul.archive-module li a:before,
 ul[class^="archive-module-"] li a:before,
 ul[class*=" archive-module-"] li a:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2048,7 +2018,6 @@ ul[class*=" mostread-"] li {
 ul.mostread li a:before,
 ul[class^="mostread-"] li a:before,
 ul[class*=" mostread-"] li a:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2074,7 +2043,6 @@ ul[class*=" categories-module-"] ul ul {
 ul.categories-module h4,
 ul[class^="categories-module-"] h4,
 ul[class*=" categories-module-"] h4 {
-	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: normal;
   line-height: 24px;
@@ -2088,12 +2056,10 @@ ul[class*=" categories-module-"] li {
 ul.categories-module li a,
 ul[class^="categories-module-"] li a,
 ul[class*=" categories-module-"] li a {
-    font-family: Helvetica, sans-serif;
 }
 ul.categories-module li a:before,
 ul[class^="categories-module-"] li a:before,
 ul[class*=" categories-module-"] li a:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2111,7 +2077,6 @@ ul[class*=" category-module-"] {
 ul.category-module h4,
 ul[class^="category-module-"] h4,
 ul[class*=" category-module-"] h4 {
-	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 }
@@ -2123,7 +2088,6 @@ ul[class*=" category-module-"] li {
 ul.category-module li a:before,
 ul[class^="category-module-"] li a:before,
 ul[class*=" category-module-"] li a:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2138,7 +2102,6 @@ ul.whosonline {
 }
 
 ul.whosonline li:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2153,7 +2116,6 @@ ul.latestusers {
 }
 
 ul.latestusers li:before {
-	font-family: FontAwesome;
 	content: "\f105";
 	padding-right: 10px;
   color: #333;
@@ -2226,7 +2188,6 @@ a.btn.jmodedit {
 ---------------------------------------------------------------------------- */
 
 .lead {
-	font-family: 'Open Sans',sans-serif;
 	font-weight: 300;
 	font-size: 21px;
 	line-height: 1.4em;
@@ -2269,7 +2230,6 @@ blockquote {
 	font-style: italic;
 }
 blockquote:before {
-  font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
@@ -2294,7 +2254,6 @@ p.dropcap:first-letter {
 	font-size: 5em;
 	line-height: 1em;
 	float: left;
-	font-family: Times, serif;
 	padding-right: 0.3em;
 }
 
@@ -3066,8 +3025,7 @@ div[class*=" moduletable-"] ul.nav.menubasic li a:before,
 .moduletable ul.nav.menubasic li.current ul.nav-child a:before,
 div[class^="moduletable-"] ul.nav.menubasic li.current ul.nav-child a:before,
 div[class*=" moduletable-"] ul.nav.menubasic li.current ul.nav-child a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-left: 10px;
   padding-right: 0;
   color: #aaa;
@@ -3218,8 +3176,7 @@ div[class*=" moduletable-"] ul.nav.menuarrow li li li li {
 .moduletable ul.nav.menuarrow li a:before,
 div[class^="moduletable-"] ul.nav.menuarrow li a:before,
 div[class*=" moduletable-"] ul.nav.menuarrow li a:before {
-  font-family: FontAwesome;
-  content: "\f105";
+  content: '›';
   padding-right: 10px;
   color: #333;
 }
@@ -3501,7 +3458,6 @@ body.contentpane #imageForm button.btn {
   padding :8px 12px 6px;
   text-transform: none;
   font-weight: normal;
-  font-family: sans-serif;
   font-size: 14px;
 }
 body.contentpane #imageForm button.btn:hover {
@@ -3634,7 +3590,6 @@ div#k2Frontend .table td {
   border: none;
 }
 #k2FrontendEditToolbar h2 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 	background-image: none;
 }
