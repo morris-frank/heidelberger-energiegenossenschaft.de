@@ -752,19 +752,6 @@ $pageclass = $params->get( 'pageclass_sfx' );
 
 			<?php endif; ?>
 
-			<!-- Backtotop -->
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<?php if (($showBacktotop) !=0) : ?>
-						<div id="fav-backtotop" class="span12">
-							<a href="" class="backtop" title="BACK TO TOP"><i class="fa fa-angle-up"></i>
-								<?php if (isset($backtotopText)) { echo htmlspecialchars($backtotopText); } else { echo ''; } ?>
-							</a>
-						</div>
-					<?php endif; ?>
-				</div>
-			</div>
-
 			<!-- Footer -->
 			<?php if($this->countModules('footer1') || $this->countModules('footer2') || $this->countModules('footer3') || $this->countModules('footer4')) : ?>
 
@@ -831,17 +818,6 @@ $pageclass = $params->get( 'pageclass_sfx' );
 
 			<?php endif; ?>
 
-			<!-- Backtotop mobile -->
-			<div class="container-fluid">
-				<div class="row-fluid">
-					<div id="fav-backtotop-mobile" class="span12">
-						<a href="" class="backtop" title="BACK TO TOP"><i class="fa fa-angle-up"></i>
-							<?php if (isset($backtotopText)) { echo htmlspecialchars($backtotopText); } else { echo ''; } ?>
-						</a>
-					</div>
-				</div>
-			</div>
-
 			<!-- Debug -->
 			<?php if ($this->countModules('debug')) { ?>
 				<div class="container-fluid" id="fav-debugwrap">
@@ -857,6 +833,5 @@ $pageclass = $params->get( 'pageclass_sfx' );
 
   </div><!-- end of fav-containerwrap -->
 
-<!--[if lte IE 7]><script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/ie6/warning.js"></script><script>window.onload=function(){e("<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/ie6/")}</script><![endif]-->
 </body>
 </html>
