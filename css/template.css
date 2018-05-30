@@ -197,7 +197,8 @@ body {
   #fav-nav .navigation {
     margin-top: 26px;
   }
-  #fav-nav .navigation li a {
+  #fav-nav .navigation li a,
+  .flatbutton {
     color: #777;
     padding: 14px 21px;
     margin: 0 0 0 5px;
@@ -208,7 +209,8 @@ body {
     content: none;
   }
   #fav-nav .navigation .nav-pills > .active > a,
-  #fav-nav .navigation .nav-pills > li > a:hover {
+  #fav-nav .navigation .nav-pills > li > a:hover,
+  .flatbutton:hover {
     background-color: #0099FF;
     color: #fff;
     text-decoration: none;
@@ -1120,4 +1122,13 @@ body {
   #fav-footer {
     border-top: 1px solid #ddd;
     margin-top: 2px;
+  }
+
+  .flatbutton {
+    padding: 0.5em;
+    line-height: 2em;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    display: block;
+    border-radius: 5px;
   }

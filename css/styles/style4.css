@@ -25,12 +25,13 @@ a {
 }
 /* Navigation */
 #fav-nav .navigation .nav-pills > .active > a, 
-#fav-nav .navigation .nav-pills > li > a:hover {
+#fav-nav .navigation .nav-pills > li > a:hover,
+.flatbutton:hover {
   background-color: #008282;
 	color: #fff;
 }
 #fav-nav .navigation .nav-pills .nav-child > .active > a, 
-#fav-nav .navigation .nav-pills .nav-child > li > a:hover  {
+#fav-nav .navigation .nav-pills .nav-child > li > a:hover {
   color: #008282;
 }
 /* Copyright */
