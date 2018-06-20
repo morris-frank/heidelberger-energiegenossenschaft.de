@@ -36,15 +36,15 @@ body {
     line-height: 21px;
     margin: 0;
   }
-  
+
   /* Mobile */
   @media (max-width: 767px) {
-  
+
     body {
       padding-left: 0!important;
       padding-right: 0!important;
     }
-  
+
   }
   a {
     color: #0099ff;
@@ -77,11 +77,11 @@ body {
   img {
     box-sizing: border-box;
   }
-  
-  
+
+
   /* 2. HEADER
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  
+
   #fav-container {
     background-color: #fff;
   }
@@ -90,19 +90,19 @@ body {
     padding-top: 7px;
     padding-bottom: 10px;
   }
-  
+
   /* Mobile */
   @media handheld, only screen and (max-width: 768px) {
-  
+
     #fav-header {
       padding-top: 20px;
     }
-  
+
   }
-  
+
   /* LOGO
   ---------------------------------------------------------------------------- */
-  
+
   #fav-logo {
     height: 100%;
     margin: 0;
@@ -135,7 +135,7 @@ body {
   .showRetinaLogo {
     display: none;
   }
-  
+
   /* Mobile */
   @media (max-width: 1199px) {
 
@@ -156,10 +156,10 @@ body {
       float: none;
       width: 100%;
     }
-  
+
   }
   @media handheld, only screen and (max-width: 768px) {
-  
+
     #fav-logo {
       margin-top: 0;
       padding-top: 0;
@@ -167,12 +167,12 @@ body {
     #fav-logo.span3 {
       margin-bottom: 0;
     }
-  
+
   }
-  
+
   /* NAVIGATION
   ---------------------------------------------------------------------------- */
-  
+
   #fav-nav {
     z-index: 100;
     position: relative;
@@ -218,9 +218,9 @@ body {
   .navigation .nav-pills {
     margin-bottom: 0;
   }
-  
+
   /* Subnav */
-  
+
   .navigation ul.nav-child {
     position: absolute;
     left: 10px;
@@ -326,10 +326,10 @@ body {
     border-right: 6px solid #fff;
     border-bottom: 6px solid transparent;
   }
-  
+
   /* Mobile */
   @media (min-width: 768px) and (max-width: 1199px) {
-  
+
     #fav-headerwrap {
       padding-bottom: 0;
       border-bottom: none;
@@ -351,24 +351,24 @@ body {
     #fav-nav .navigation .nav-pills {
       margin-top: 0;
     }
-  
+
   }
-  
+
   @media (min-width: 768px) and (max-width: 979px) {
-  
+
      #fav-nav .navigation li a {
       padding: 10px;
      }
-  
+
   }
   @media (min-width: 768px) {
-  
+
     #fav-navbar {
       display: none;
     }
-  
+
   }
-  
+
   /* IE */
   .lt-ie9 #fav-navbar,
   .lt-ie9 #fav-nav {
@@ -384,19 +384,19 @@ body {
   .lt-ie9 .navigation ul.nav-child a:hover {
     background-color: #fff;
   }
-  
-  
+
+
   /* Navbar for mobile view
   ---------------------------------------------------------------------------- */
-  
+
   @media handheld, only screen and (max-width: 767px) {
-  
+
     #fav-nav {
       display: none;
     }
-  
+
     /* Navbar */
-  
+
     #fav-navbar .moduletable {
       margin: 0;
       padding: 7px 0 0;
@@ -412,9 +412,9 @@ body {
       border-width: 1px;
       border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
     }
-  
+
     /* Navbar collapse */
-  
+
     #fav-navbar-collapse .moduletable ul li,
     #fav-navbar-collapse ul {
       background: none;
@@ -466,9 +466,9 @@ body {
       box-shadow: none;
       border-radius: 0;
     }
-  
+
     /* Navbar Light */
-  
+
     div.navbar #fav-navbar-collapse li a:hover,
     div.navbar #fav-navbar-collapse li li a:hover,
     div.navbar #fav-navbar-collapse li li li a:hover,
@@ -530,9 +530,9 @@ body {
       background-color: #444;
       box-shadow: 0 1px 0 #fff;
     }
-  
+
     /* Navbar Inverse */
-  
+
     div.navbar.navbar-inverse #fav-navbar-collapse li a:hover,
     div.navbar.navbar-inverse #fav-navbar-collapse li li a:hover,
     div.navbar.navbar-inverse #fav-navbar-collapse li li li a:hover,
@@ -596,13 +596,13 @@ body {
     #fav-navbar.navbar.navbar-inverse a.btn.btn-navbar {
       border-color: #040404 #040404 #000;
     }
-  
+
   }
-  
-  
+
+
   /* 3. CONTENT BLOCKS
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  
+
   #fav-slide,
   #fav-intro,
   #fav-showcase,
@@ -617,7 +617,7 @@ body {
   }
   /* Mobile */
   @media handheld, only screen and (max-width: 767px) {
-  
+
     #fav-slide,
     #fav-intro,
     #fav-showcase,
@@ -630,12 +630,12 @@ body {
       padding-top: 0;
       padding-bottom: 0;
     }
-  
+
   }
-  
+
   /* SLIDE
   ---------------------------------------------------------------------------- */
-  
+
   #fav-slide .moduletable li,
   #fav-slide div[class^="moduletable-"] li,
   #fav-slide div[class*=" moduletable-"] li {
@@ -646,21 +646,21 @@ body {
   #fav-slide div[class*=" moduletable-"] li ul {
     margin-bottom: 14px;
   }
-  
+
   /* Mobile */
   @media (max-width: 767px) {
-  
+
     #fav-slide .moduletable li ul,
     #fav-slide div[class^="moduletable-"] li ul,
     #fav-slide div[class*=" moduletable-"] li ul {
       margin-bottom: 0;
     }
-  
+
   }
-  
+
   /* BREADCRUMBS
   ---------------------------------------------------------------------------- */
-  
+
   #fav-breadcrumbs .moduletable,
   #fav-breadcrumbs div[class^="moduletable-"],
   #fav-breadcrumbs div[class*=" moduletable-"] {
@@ -672,33 +672,33 @@ body {
   #fav-breadcrumbs div[class*=" moduletable-"] img {
     display: none;
   }
-  
+
   /* Mobile */
   @media handheld, only screen and (max-width: 767px) {
-  
+
     #fav-breadcrumbs .moduletable,
     #fav-breadcrumbs div[class^="moduletable-"],
     #fav-breadcrumbs div[class*=" moduletable-"] {
       margin-top: 10px;
       margin-bottom: 0;
     }
-  
+
   }
-  
+
   /* TOP
   ---------------------------------------------------------------------------- */
-  
+
   #fav-topwrap {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     margin-top: 14px;
     margin-bottom: 18px;
   }
-  
-  
+
+
   /* MAIN
   ---------------------------------------------------------------------------- */
-  
+
   #fav-messagewrap .row-fluid [class*="span"] {
     min-height:0;
   }
@@ -708,10 +708,10 @@ body {
   #fav-mainwrap .row-fluid [class*="span"] {
     min-height: 10px;
   }
-  
+
   /* BACKTOP
   ---------------------------------------------------------------------------- */
-  
+
   a.backtop i {
     background-color: #777;
     color: #FFFFFF;
@@ -735,9 +735,9 @@ body {
   #fav-backtotop .backtop {
     float: right;
   }
-  
+
   @media (max-width: 1199px) {
-  
+
     #fav-backtotop {
       position: relative;
       bottom: 0;
@@ -745,19 +745,19 @@ body {
       margin-bottom: 36px;
       float: right;
     }
-  
+
   }
-  
+
   /* Mobile */
   @media (min-width: 768px) {
-  
+
     #fav-backtotop-mobile {
       display: none;
     }
-  
+
   }
   @media handheld, only screen and (max-width: 767px) {
-  
+
     #fav-backtotop {
       display: none;
     }
@@ -765,9 +765,9 @@ body {
       text-align: center;
       margin-bottom: 10px;
     }
-  
+
   }
-  
+
   /* IE */
   .lt-ie9 #fav-backtotop {
     padding-bottom: 1em;
@@ -775,10 +775,10 @@ body {
   .lt-ie9 #fav-backtotop-mobile {
     display: none;
   }
-  
+
   /* MOBILE PARAMETERS
   ---------------------------------------------------------------------------- */
-  
+
   @media (max-width: 480px) {
     #fav-main img,
     .moduletable .custom img,
@@ -788,7 +788,7 @@ body {
     .img-right {
       display: inline-block ;
     }
-  
+
     #fav-advertwrap,
     #fav-intro1, #fav-intro2, #fav-intro3, #fav-intro4,
     #fav-slide1, #fav-slide2,
@@ -805,11 +805,11 @@ body {
       display: block ;
     }
   }
-  
-  
+
+
   /* 4. EXTENSIONS
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  
+
   /* FAVSLIDER
   ---------------------------------------------------------------------------- */
   div[id^="slider-"].favslider,
@@ -859,17 +859,17 @@ body {
     color: #333;
     text-align:center;
   }
-  
+
   @media handheld, only screen and (max-width: 990px) {
-  
+
     #fav-caption h3 {
       font-size: 30px;
     }
-  
+
   }
-  
+
   @media handheld, only screen and (max-width: 767px) {
-  
+
     #fav-caption {
       top: 30%;
     }
@@ -878,9 +878,9 @@ body {
       margin-bottom: 0.6em;
     }
   }
-  
+
   @media handheld, only screen and (max-width: 600px) {
-  
+
     #fav-caption {
       top: 19%;
     }
@@ -890,11 +890,11 @@ body {
     #fav-caption p {
       font-size: 0.9em;
     }
-  
+
   }
-  
+
   @media handheld, only screen and (max-width: 480px) {
-  
+
     #fav-caption {
       top: 0;
       width: 100%;
@@ -912,9 +912,9 @@ body {
     .fav-direction-nav {
       display: none;
     }
-  
+
   }
-  
+
    /* IE */
   .lt-ie9 #fav-caption {
     background-color: #FFFFFF;
@@ -922,11 +922,11 @@ body {
     filter: alpha(opacity=67);
     padding: 1% 3% 2%;
   }
-  
-  
+
+
   /* FAVGLYPH
   ---------------------------------------------------------------------------- */
-  
+
   .favdemo .favglyph-icon-center h2 {
     font-weight: 400!important;
   }
@@ -946,11 +946,11 @@ body {
   .favdemo #favglyph .favglyph-icon-right i {
     background-color: #0099ff;
   }
-  
-  
+
+
   /* FAVSOCIAL
   ---------------------------------------------------------------------------- */
-  
+
   .favdemo div[id^="favsocial"] a,
   .favdemo div[id*=" favsocial"] a {
     border: 1px solid #ddd;
@@ -963,11 +963,11 @@ body {
   .favdemo #favsocial {
     margin-top: 3px;
   }
-  
-  
+
+
   /* FAVEFFECTS
   ---------------------------------------------------------------------------- */
-  
+
   .favdemo #faveffects {
     margin-top: 40px;
   }
@@ -982,34 +982,34 @@ body {
     font-weight: 300;
   }
   @media handheld, only screen and (max-width: 990px) {
-  
+
     .favdemo #faveffects p[id^="faveffects-title"],
     .favdemo #faveffects p[id*=" faveffects-title"] {
       font-size: 16px!important;
     }
-  
+
   }
   @media handheld, only screen and (max-width: 767px) {
-  
+
     .favdemo #faveffects p[id^="faveffects-title"],
     .favdemo #faveffects p[id*=" faveffects-title"] {
       font-size: 14px!important;
     }
-  
+
   }
   @media handheld, only screen and (max-width: 480px) {
-  
+
     .favdemo #faveffects p[id^="faveffects-title"],
     .favdemo #faveffects p[id*=" faveffects-title"] {
       font-size: 21px!important;
     }
-  
+
   }
-  
-  
+
+
   /* 5. CUSTOM STYLES
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-  
+
   #fav-download p {
     margin: 0;
   }
@@ -1032,10 +1032,10 @@ body {
   #fav-download a.btn.btn-primary.btn-large {
     margin-bottom: 9px;
   }
-  
+
   /* Mobile */
   @media handheld, only screen and (max-width: 1199px) {
-  
+
    #fav-download #fav-download-message {
       float: none;
       text-align: center;
@@ -1049,7 +1049,7 @@ body {
       margin-top: 4px;
       position: relative;
     }
-  
+
   }
 
   /* Maurice var extra */
@@ -1074,7 +1074,7 @@ body {
   .span4 cite {
     margin-bottom: 2em;
   }
-  
+
   li cite {
     text-indent: 1em;
   }
@@ -1091,16 +1091,36 @@ body {
     }
   }
 
-  .moduletable_waeldchen {
-    text-align: center;
-    box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    background: linear-gradient(to bottom right, #78D200, #BED200);
+  .moduletable_box {
+    margin-top: 3em;
   }
-  
-  .moduletable_waeldchen, .moduletable_waeldchen a{
-    color: white;
-    text-shadow: 2px 2px 0px #758d1b;
+
+  .moduletable_box .custom_box {
+    border-radius: 10px;
+    background: #008282;
+    background: linear-gradient(to bottom right, #78D200, #BED200);
+    color: #333;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+  }
+
+  .moduletable_box .custom_box img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .moduletable_box .custom_box div{
+    padding: 0.5em 1em 1em;
+    text-align: center;
+  }
+
+  .moduletable_box .custom_box a {
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .moduletable_box .custom_box a:hover {
+    text-decoration: none;
   }
 
   #fav-navbar .navbar-inner {
