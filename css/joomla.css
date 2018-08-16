@@ -2234,11 +2234,14 @@ blockquote:before {
   font-style: normal;
   text-decoration: inherit;
   float: left;
-  font-size: 31px;
   color: #008282;
-  margin-right: 0.5em;
-  margin-top: 0.3em;
-  content: "\f10e";
+  font-size: 107px;
+  content: "„";
+  font-size: 107px;
+  margin-top: -0.66em;
+  margin-right: 0.1em;
+  font-family: serif;
+  line-height: 109px;
 }
 blockquote p {
 	margin-bottom: 0;
