@@ -1097,11 +1097,11 @@ body {
 
   .moduletable_box .custom_box {
     border-radius: 10px;
-    background: #008282;
+    background: #78D200;
     background: linear-gradient(to bottom right, #78D200, #BED200);
-    color: #333;
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+    color: #222;
+    box-shadow: 1x 1px 1px 0px rgba(0,0,0,0.3);
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
   }
 
   .moduletable_box .custom_box img {
@@ -1121,6 +1121,21 @@ body {
 
   .moduletable_box .custom_box a:hover {
     text-decoration: none;
+  }
+
+  .moduletable_box .custom_box .button {
+    text-decoration: none;
+    background: #fffd;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-top: 0.7em;
+  }
+
+  .moduletable_box .custom_box .button:hover {
+    background: #fffc;
   }
 
   #fav-navbar .navbar-inner {
