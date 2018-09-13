@@ -29,579 +29,675 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 body {
-    font-family: Open Sans, Helvetica, Arial, sans-serif;
-    color: #333333;
-    background-color: #ffffff;
-    font-size: 14px;
-    line-height: 21px;
-    margin: 0;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
-  /* Mobile */
-  @media (max-width: 767px) {
+}
 
-    body {
-      padding-left: 0!important;
-      padding-right: 0!important;
-    }
+a {
+  color: #0099ff;
+  text-decoration: none;
+}
 
-  }
-  a {
-    color: #0099ff;
-    text-decoration: none;
-  }
-  a:hover,
-  a:focus {
-    color: #444;
-    text-decoration: none;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Open Sans, Helvetica, Arial, sans-serif;
-    font-weight: 300!important;
-  }
-  h4 {
-    margin-top: 3rem;
-  }
-  h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    text-decoration: none;
-  }
-  p {
-    margin: 0 0 10px;
-  }
-  hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid #DDDDDD;
-    border-bottom: 1px solid #fff;
-  }
-  img {
-    box-sizing: border-box;
-  }
+a:hover,
+a:focus {
+  color: #444;
+  text-decoration: none;
+}
+
+h4 {
+  margin-top: 3rem;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #fff;
+}
+
+img {
+  box-sizing: border-box;
+}
 
 
-  /* 2. HEADER
+/* 2. HEADER
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-  #fav-container {
-    background-color: #fff;
+#fav-container {
+  background-color: #fff;
+}
+
+#fav-headerwrap {
+  margin-bottom: 9px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+/* Mobile */
+@media handheld,
+only screen and (max-width: 768px) {
+
+  #fav-header {
+    padding-top: 20px;
   }
-  #fav-headerwrap {
-    margin-bottom: 9px;
-    padding-top: 7px;
-    padding-bottom: 10px;
-  }
 
-  /* Mobile */
-  @media handheld, only screen and (max-width: 768px) {
+}
 
-    #fav-header {
-      padding-top: 20px;
-    }
-
-  }
-
-  /* LOGO
+/* LOGO
   ---------------------------------------------------------------------------- */
+
+#fav-logo {
+  height: 100%;
+  margin: 0;
+  padding: 22px 0 0;
+  text-align: left;
+}
+
+#fav-logo h1 {
+  margin: 0;
+}
+
+.defaultLogo,
+.mediaLogo {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.textLogo {
+  color: #111;
+  font-size: 40px;
+  padding: 10px 0;
+  margin: 10px 0;
+  line-height: 30px;
+}
+
+.slogan {
+  color: #777;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+}
+
+.showRetinaLogo {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 1199px) {
 
   #fav-logo {
-    height: 100%;
-    margin: 0;
-    padding: 22px 0 0;
-    text-align: left ;
-  }
-  #fav-logo h1 {
-    margin: 0;
-  }
-  .defaultLogo,
-  .mediaLogo {
-    display: block;
-    padding: 0;
-    margin: 0;
-  }
-  .textLogo {
-    color: #111;
-    font-size: 40px;
-    padding: 10px 0;
-    margin: 10px 0;
-    line-height: 30px;
-  }
-  .slogan {
-    color: #777;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 0;
-    margin: 0;
-  }
-  .showRetinaLogo {
-    display: none;
+    padding: 37px 0 0;
   }
 
-  /* Mobile */
-  @media (max-width: 1199px) {
+}
 
-    #fav-logo {
-        padding: 37px 0 0;
-    }
+@media (max-width: 767px) {
 
-  }
-
-  @media (max-width: 767px) {
-
-    .row #fav-logo {
-      width: 100%;
-      padding-top: 0;
-    }
-    #fav-logo {
-      text-align: center;
-      float: none;
-      width: 100%;
-    }
-
-  }
-  @media handheld, only screen and (max-width: 768px) {
-
-    #fav-logo {
-      margin-top: 0;
-      padding-top: 0;
-    }
-    #fav-logo.span3 {
-      margin-bottom: 0;
-    }
-
+  .row #fav-logo {
+    width: 100%;
+    padding-top: 0;
   }
 
-  /* NAVIGATION
-  ---------------------------------------------------------------------------- */
+  #fav-logo {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
 
-  #fav-nav {
-    z-index: 100;
-    position: relative;
-    float: right;
-    margin-top: 0.7em;
+}
+
+@media handheld,
+only screen and (max-width: 768px) {
+
+  #fav-logo {
+    margin-top: 0;
+    padding-top: 0;
   }
-  #fav-nav .moduletable {
-    background: none;
-    overflow: visible;
-    margin: 0;
-  }
-  #fav-nav .moduletable ul.nav.menu {
-    float:right;
-  }
-  #fav-nav .moduletable ul.nav.menu li,
-  #fav-nav .moduletable ul.nav.menu li li,
-  #fav-nav .moduletable ul.nav.menu li li li,
-  #fav-nav .moduletable ul.nav.menu li li li li {
-    line-height: 20px;
-    padding-left: 0;
-  }
-  #fav-nav .navigation {
-    margin-top: 26px;
-  }
-  #fav-nav .navigation li a,
-  .flatbutton {
-    color: #777;
-    padding: 14px 21px;
-    margin: 0 0 0 5px;
-    font-size: 14px;
-    transition: all 200ms linear;
-  }
-  #fav-nav .navigation li a:before {
-    content: none;
-  }
-  #fav-nav .navigation .nav-pills > .active > a,
-  #fav-nav .navigation .nav-pills > li > a:hover,
-  .flatbutton:hover {
-    background-color: #0099FF;
-    color: #fff;
-    text-decoration: none;
-  }
-  .navigation .nav-pills {
+
+  #fav-logo.span3 {
     margin-bottom: 0;
   }
 
-  /* Subnav */
+}
 
-  .navigation ul.nav-child {
-    position: absolute;
-    left: 10px;
-    z-index: 1000;
-    display: none;
-    min-width: 200px;
-    padding: 5px 0;
-    margin: 0;
-    list-style: none;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    *border-right-width: 2px;
-    *border-bottom-width: 2px;
-    background-clip: padding-box;
-  }
-  .navigation ul.nav > li {
-    position: relative;
-    float: left;
-  }
-  .navigation ul.nav > li:hover > .nav-child,
-  .navigation ul.nav > li > a:focus + .nav-child,
-  .navigation ul.nav-child li:hover > ul {
-    display: block;
-  }
-  #fav-nav .nav-pills ul.nav-child li > ul {
-    margin: -38px 0 0 190px;
-    padding: 0;
-  }
-  .navigation ul.nav-child a {
-    display: block;
-    clear: both;
-    color: #333;
-    font-size: 14px;
-    padding: 3px 20px;
-    font-weight: normal;
-    line-height: 2em!important;
-    white-space: nowrap;
-  }
-  #fav-nav .navigation .nav-pills .nav-child {
-    padding-bottom: 0;
-    border-radius: 4px;
-  }
-  #fav-nav .navigation .nav-pills .nav-child a {
-    margin: 0;
-    padding: 4px 20px;
-    font-size: 14px;
-    border-top: none!important;
-    border-bottom: 1px solid #ddd;
-  }
-  #fav-nav .navigation .nav-pills .nav-child > .active > a,
-  #fav-nav .navigation .nav-pills .nav-child > li > a:hover  {
-    text-decoration: none;
-    color: #0099ff;
-  }
-  .navigation .nav-child.pull-right {
-    right: 0;
-    left: auto;
-  }
-  .navigation .nav-child .divider {
-    *width: 100%;
-    height: 1px;
-    margin: 8px 1px;
-    *margin: -5px 0 5px;
-    overflow: hidden;
-    background-color: #e5e5e5;
-    border-bottom: 1px solid #fff;
-  }
-  .navigation .nav-child:before {
-    position: absolute;
-    top: -7px;
-    left: 9px;
-    display: inline-block;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #ccc;
-    border-left: 7px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.2);
-    content: '';
-  }
-  .navigation .nav-child:after {
-    position: absolute;
-    top: -6px;
-    left: 10px;
-    display: inline-block;
-    border-right: 6px solid transparent;
-    border-bottom: 6px solid #ffffff;
-    border-left: 6px solid transparent;
-    content: '';
-  }
-  .navigation .nav-child li > ul:before {
-    top: 10px;
-    left: -7px;
-    border-left: none;
-    border-bottom: 7px solid transparent;
-    border-right: 7px solid rgba(0, 0, 0, 0.2);
-    border-top: 7px solid transparent;
-  }
-  .navigation .nav-child li > ul:after {
-    top: 11px;
-    left: -6px;
-    margin-top: 0;
-    border-left: none;
-    border-top: 6px solid transparent;
-    border-right: 6px solid #fff;
-    border-bottom: 6px solid transparent;
-  }
-
-  /* Mobile */
-  @media (min-width: 768px) and (max-width: 1199px) {
-
-    #fav-headerwrap {
-      padding-bottom: 0;
-      border-bottom: none;
-    }
-    #fav-nav {
-      float: none;
-      display: flex;
-      margin-left: 0;
-      padding: 14px 0px;
-      margin-top: 32px;
-    }
-    #fav-nav .moduletable ul.nav.menu {
-      float: none;
-    }
-    #fav-nav .navigation {
-      display: table;
-      margin: 0 auto;
-    }
-    #fav-nav .navigation .nav-pills {
-      margin-top: 0;
-    }
-
-  }
-
-  @media (min-width: 768px) and (max-width: 979px) {
-
-     #fav-nav .navigation li a {
-      padding: 10px;
-     }
-
-  }
-  @media (min-width: 768px) {
-
-    #fav-navbar {
-      display: none;
-    }
-
-  }
-
-  /* IE */
-  .lt-ie9 #fav-navbar,
-  .lt-ie9 #fav-nav {
-    display: none;
-  }
-  .lt-ie9 #fav-header {
-    position: relative;
-    z-index: 9999;
-  }
-  .lt-ie9 .navigation ul.nav-child {
-    padding-top: 0;
-  }
-  .lt-ie9 .navigation ul.nav-child a:hover {
-    background-color: #fff;
-  }
-
-
-  /* Navbar for mobile view
+/* NAVIGATION
   ---------------------------------------------------------------------------- */
 
-  @media handheld, only screen and (max-width: 767px) {
+#fav-nav {
+  z-index: 100;
+  position: relative;
+  float: right;
+  margin-top: 0.7em;
+}
 
-    #fav-nav {
-      display: none;
-    }
+#fav-nav .moduletable {
+  background: none;
+  overflow: visible;
+  margin: 0;
+}
 
-    /* Navbar */
+#fav-nav .moduletable ul.nav.menu {
+  float: right;
+}
 
-    #fav-navbar .moduletable {
-      margin: 0;
-      padding: 7px 0 0;
-    }
-    #fav-navbar .navbar {
-      margin-bottom: 0;
-    }
-    #fav-navbar .navbar-inner {
-      padding: 0;
-    }
-    #fav-navbar a.btn.btn-navbar {
-      margin-bottom: 0;
-      border-width: 1px;
-      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
-    }
+#fav-nav .moduletable ul.nav.menu li,
+#fav-nav .moduletable ul.nav.menu li li,
+#fav-nav .moduletable ul.nav.menu li li li,
+#fav-nav .moduletable ul.nav.menu li li li li {
+  line-height: 20px;
+  padding-left: 0;
+}
 
-    /* Navbar collapse */
+#fav-nav .navigation {
+  margin-top: 26px;
+}
 
-    #fav-navbar-collapse .moduletable ul li,
-    #fav-navbar-collapse ul {
-      background: none;
-      float: none;
-      padding: 0;
-      margin: 0;
-    }
-    #fav-navbar-collapse li a {
-      padding-left: 14px;
-    }
-    #fav-navbar-collapse li li a {
-      padding-left: 28px;
-    }
-    #fav-navbar-collapse li li li a {
-      padding-left: 42px;
-    }
-    #fav-navbar-collapse li li li li a {
-      padding-left: 56px;
-    }
-    #fav-navbar-collapse li li li li li a {
-      padding-left: 70px;
-    }
-    #fav-navbar-collapse a {
-      display: block;
-      padding: 4px 14px 2px;
-      font-size: 14px;
-      line-height: 2em;
-      font-weight: normal;
-      text-decoration: none;
-      margin: 0;
-    }
-    #fav-navbar-collapse a:before {
-      font-family: FontAwesome;
-      content: "\f105";
-      padding-left: 10px;
-      padding-top: 0;
-      float: right;
-      font-size: 15px;
-      line-height: 2em;
-      font-weight: normal;
-    }
-    .navbar-inverse .nav .active > a,
-    .navbar .nav .active > a,
-    .navbar-inverse .nav .active > a:hover,
-    .navbar .nav .active > a:hover,
-    .navbar-inverse .nav .active > a:focus,
-    .navbar .nav .active > a:focus {
-      background: none;
-      box-shadow: none;
-      border-radius: 0;
-    }
+#fav-nav .navigation li a,
+.flatbutton {
+  color: #777;
+  padding: 14px 21px;
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  transition: all 200ms linear;
+}
 
-    /* Navbar Light */
+#fav-nav .navigation li a:before {
+  content: none;
+}
 
-    div.navbar #fav-navbar-collapse li a:hover,
-    div.navbar #fav-navbar-collapse li li a:hover,
-    div.navbar #fav-navbar-collapse li li li a:hover,
-    div.navbar #fav-navbar-collapse li li li li a:hover,
-    div.navbar #fav-navbar-collapse li a:focus,
-    div.navbar #fav-navbar-collapse li li a:focus,
-    div.navbar #fav-navbar-collapse li li li a:focus,
-    div.navbar #fav-navbar-collapse li li li li a:focus,
-    div.navbar #fav-navbar-collapse li[class^="item-"].current.active,
-    div.navbar #fav-navbar-collapse li[class*=" item-"].current.active,
-    div.navbar #fav-navbar-collapse li li[class^="item-"].current.active,
-    div.navbar #fav-navbar-collapse li li[class*=" item-"].current.active,
-    div.navbar #fav-navbar-collapse li li li[class^="item-"].current.active,
-    div.navbar #fav-navbar-collapse li li li[class*=" item-"].current.active,
-    div.navbar #fav-navbar-collapse li li li li[class^="item-"].current.active,
-    div.navbar #fav-navbar-collapse li li li li[class*=" item-"].current.active {
-      background-color: #eee!important;
-      border-radius: 0;
-    }
-    div.navbar #fav-navbar-collapse li li:hover,
-    div.navbar #fav-navbar-collapse li li li:hover,
-    div.navbar #fav-navbar-collapse li li li li:hover {
-      background: none;
-    }
-    div.navbar #fav-navbar-collapse li {
-      border-top: 1px solid #ddd;
-    }
-    div.navbar #fav-navbar-collapse a {
-      color: #444;
-    }
-    div.navbar #fav-navbar-collapse a:before {
-      color: #aaa;
-    }
-    div.navbar #fav-navbar-collapse li a:hover:before,
-    div.navbar #fav-navbar-collapse li[class^="item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li[class*=" item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li li[class^="item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li li[class*=" item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li li li[class^="item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li li li[class*=" item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li li li li[class^="item-"].current.active a:before,
-    div.navbar #fav-navbar-collapse li li li li[class*=" item-"].current.active a:before {
-      color: #777;
-    }
-    div.navbar #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul,
-    div.navbar #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul {
-        color: #333;
-        background-color: #fff;
-    }
-    div.navbar #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:before,
-    div.navbar #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:before {
-        color: #aaa;
-    }
-    div.navbar #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:hover:before,
-    div.navbar #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:hover:before {
-        color: #444;
-    }
-    .navbar .btn-navbar .icon-bar {
-      background-color: #444;
-      box-shadow: 0 1px 0 #fff;
-    }
+#fav-nav .navigation .nav-pills>.active>a,
+#fav-nav .navigation .nav-pills>li>a:hover,
+.flatbutton:hover {
+  background-color: #0099FF;
+  color: #fff;
+  text-decoration: none;
+}
 
-    /* Navbar Inverse */
+.navigation .nav-pills {
+  margin-bottom: 0;
+}
 
-    div.navbar.navbar-inverse #fav-navbar-collapse li a:hover,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li a:hover,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li a:hover,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li a:hover,
-    div.navbar.navbar-inverse #fav-navbar-collapse li a:focus,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li:focus,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li:focus,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li:focus,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li[class^="item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li[class*=" item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li[class^="item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li[class*=" item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class^="item-"].current.active,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class*=" item-"].current.active {
-      background-color: #333!important;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse li li:hover,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li:hover,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li:hover {
-      background: none;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse li {
-      border-top: 1px solid #222;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse a {
-      color: #fff;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse a:before {
-      color: #777;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse li a:hover:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li[class^="item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li[class*=" item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li[class^="item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li[class*=" item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class^="item-"].current.active a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class*=" item-"].current.active a:before {
-      color: #fff;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul {
-      color: #fff;
-      background-color: #111;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:before {
-      color: #777;
-    }
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:hover:before,
-    div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:hover:before {
-      color: #fff;
-    }
-    div.navbar.navbar-inverse .btn-navbar .icon-bar {
-      background-color: #f5f5f5;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    }
-    #fav-navbar.navbar.navbar-inverse a.btn.btn-navbar {
-      border-color: #040404 #040404 #000;
-    }
+/* Subnav */
 
+.navigation ul.nav-child {
+  position: absolute;
+  left: 10px;
+  z-index: 1000;
+  display: none;
+  min-width: 200px;
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  background-clip: padding-box;
+}
+
+.navigation ul.nav>li {
+  position: relative;
+  float: left;
+}
+
+.navigation ul.nav>li:hover>.nav-child,
+.navigation ul.nav>li>a:focus+.nav-child,
+.navigation ul.nav-child li:hover>ul {
+  display: block;
+}
+
+#fav-nav .nav-pills ul.nav-child li>ul {
+  margin: -38px 0 0 190px;
+  padding: 0;
+}
+
+.navigation ul.nav-child a {
+  display: block;
+  clear: both;
+  color: #333;
+  font-size: 14px;
+  padding: 3px 20px;
+  font-weight: normal;
+  line-height: 2em !important;
+  white-space: nowrap;
+}
+
+#fav-nav .navigation .nav-pills .nav-child {
+  padding-bottom: 0;
+  border-radius: 4px;
+}
+
+#fav-nav .navigation .nav-pills .nav-child a {
+  margin: 0;
+  padding: 4px 20px;
+  font-size: 14px;
+  border-top: none !important;
+  border-bottom: 1px solid #ddd;
+}
+
+#fav-nav .navigation .nav-pills .nav-child>.active>a,
+#fav-nav .navigation .nav-pills .nav-child>li>a:hover {
+  text-decoration: none;
+  color: #0099ff;
+}
+
+.navigation .nav-child.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.navigation .nav-child .divider {
+  *width: 100%;
+  height: 1px;
+  margin: 8px 1px;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #fff;
+}
+
+.navigation .nav-child:before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.navigation .nav-child:after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+
+.navigation .nav-child li>ul:before {
+  top: 10px;
+  left: -7px;
+  border-left: none;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid rgba(0, 0, 0, 0.2);
+  border-top: 7px solid transparent;
+}
+
+.navigation .nav-child li>ul:after {
+  top: 11px;
+  left: -6px;
+  margin-top: 0;
+  border-left: none;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #fff;
+  border-bottom: 6px solid transparent;
+}
+
+/* Mobile */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  #fav-headerwrap {
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
+  #fav-nav {
+    float: none;
+    display: flex;
+    margin-left: 0;
+    padding: 14px 0px;
+    margin-top: 32px;
+  }
 
-  /* 3. CONTENT BLOCKS
+  #fav-nav .moduletable ul.nav.menu {
+    float: none;
+  }
+
+  #fav-nav .navigation {
+    display: table;
+    margin: 0 auto;
+  }
+
+  #fav-nav .navigation .nav-pills {
+    margin-top: 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  #fav-nav .navigation li a {
+    padding: 10px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #fav-navbar {
+    display: none;
+  }
+
+}
+
+/* IE */
+.lt-ie9 #fav-navbar,
+.lt-ie9 #fav-nav {
+  display: none;
+}
+
+.lt-ie9 #fav-header {
+  position: relative;
+  z-index: 9999;
+}
+
+.lt-ie9 .navigation ul.nav-child {
+  padding-top: 0;
+}
+
+.lt-ie9 .navigation ul.nav-child a:hover {
+  background-color: #fff;
+}
+
+
+/* Navbar for mobile view
+  ---------------------------------------------------------------------------- */
+
+@media handheld,
+only screen and (max-width: 767px) {
+
+  #fav-nav {
+    display: none;
+  }
+
+  /* Navbar */
+
+  #fav-navbar .moduletable {
+    margin: 0;
+    padding: 7px 0 0;
+  }
+
+  #fav-navbar .navbar {
+    margin-bottom: 0;
+  }
+
+  #fav-navbar .navbar-inner {
+    padding: 0;
+  }
+
+  #fav-navbar a.btn.btn-navbar {
+    margin-bottom: 0;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
+  }
+
+  /* Navbar collapse */
+
+  #fav-navbar-collapse .moduletable ul li,
+  #fav-navbar-collapse ul {
+    background: none;
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #fav-navbar-collapse li a {
+    padding-left: 14px;
+  }
+
+  #fav-navbar-collapse li li a {
+    padding-left: 28px;
+  }
+
+  #fav-navbar-collapse li li li a {
+    padding-left: 42px;
+  }
+
+  #fav-navbar-collapse li li li li a {
+    padding-left: 56px;
+  }
+
+  #fav-navbar-collapse li li li li li a {
+    padding-left: 70px;
+  }
+
+  #fav-navbar-collapse a {
+    display: block;
+    padding: 4px 14px 2px;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  #fav-navbar-collapse a:before {
+    font-family: FontAwesome;
+    content: "\f105";
+    padding-left: 10px;
+    padding-top: 0;
+    float: right;
+    font-size: 15px;
+    line-height: 2em;
+    font-weight: normal;
+  }
+
+  .navbar-inverse .nav .active>a,
+  .navbar .nav .active>a,
+  .navbar-inverse .nav .active>a:hover,
+  .navbar .nav .active>a:hover,
+  .navbar-inverse .nav .active>a:focus,
+  .navbar .nav .active>a:focus {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  /* Navbar Light */
+
+  div.navbar #fav-navbar-collapse li a:hover,
+  div.navbar #fav-navbar-collapse li li a:hover,
+  div.navbar #fav-navbar-collapse li li li a:hover,
+  div.navbar #fav-navbar-collapse li li li li a:hover,
+  div.navbar #fav-navbar-collapse li a:focus,
+  div.navbar #fav-navbar-collapse li li a:focus,
+  div.navbar #fav-navbar-collapse li li li a:focus,
+  div.navbar #fav-navbar-collapse li li li li a:focus,
+  div.navbar #fav-navbar-collapse li[class^="item-"].current.active,
+  div.navbar #fav-navbar-collapse li[class*=" item-"].current.active,
+  div.navbar #fav-navbar-collapse li li[class^="item-"].current.active,
+  div.navbar #fav-navbar-collapse li li[class*=" item-"].current.active,
+  div.navbar #fav-navbar-collapse li li li[class^="item-"].current.active,
+  div.navbar #fav-navbar-collapse li li li[class*=" item-"].current.active,
+  div.navbar #fav-navbar-collapse li li li li[class^="item-"].current.active,
+  div.navbar #fav-navbar-collapse li li li li[class*=" item-"].current.active {
+    background-color: #eee !important;
+    border-radius: 0;
+  }
+
+  div.navbar #fav-navbar-collapse li li:hover,
+  div.navbar #fav-navbar-collapse li li li:hover,
+  div.navbar #fav-navbar-collapse li li li li:hover {
+    background: none;
+  }
+
+  div.navbar #fav-navbar-collapse li {
+    border-top: 1px solid #ddd;
+  }
+
+  div.navbar #fav-navbar-collapse a {
+    color: #444;
+  }
+
+  div.navbar #fav-navbar-collapse a:before {
+    color: #aaa;
+  }
+
+  div.navbar #fav-navbar-collapse li a:hover:before,
+  div.navbar #fav-navbar-collapse li[class^="item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li[class*=" item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li li[class^="item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li li[class*=" item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li li li[class^="item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li li li[class*=" item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li li li li[class^="item-"].current.active a:before,
+  div.navbar #fav-navbar-collapse li li li li[class*=" item-"].current.active a:before {
+    color: #777;
+  }
+
+  div.navbar #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul,
+  div.navbar #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul {
+    color: #333;
+    background-color: #fff;
+  }
+
+  div.navbar #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:before,
+  div.navbar #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:before {
+    color: #aaa;
+  }
+
+  div.navbar #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:hover:before,
+  div.navbar #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:hover:before {
+    color: #444;
+  }
+
+  .navbar .btn-navbar .icon-bar {
+    background-color: #444;
+    box-shadow: 0 1px 0 #fff;
+  }
+
+  /* Navbar Inverse */
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li a:hover,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li a:hover,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li a:hover,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li a:hover,
+  div.navbar.navbar-inverse #fav-navbar-collapse li a:focus,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li:focus,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li:focus,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li:focus,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li[class^="item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li[class*=" item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li[class^="item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li[class*=" item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class^="item-"].current.active,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class*=" item-"].current.active {
+    background-color: #333 !important;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li li:hover,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li:hover,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li:hover {
+    background: none;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li {
+    border-top: 1px solid #222;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse a {
+    color: #fff;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse a:before {
+    color: #777;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li a:hover:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li[class^="item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li[class*=" item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li[class^="item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li[class*=" item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class^="item-"].current.active a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li li li li[class*=" item-"].current.active a:before {
+    color: #fff;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul {
+    color: #fff;
+    background-color: #111;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:before {
+    color: #777;
+  }
+
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class^="item-"].current.active.deeper.parent ul a:hover:before,
+  div.navbar.navbar-inverse #fav-navbar-collapse li[class*=" item-"].current.active.deeper.parent ul a:hover:before {
+    color: #fff;
+  }
+
+  div.navbar.navbar-inverse .btn-navbar .icon-bar {
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  #fav-navbar.navbar.navbar-inverse a.btn.btn-navbar {
+    border-color: #040404 #040404 #000;
+  }
+
+}
+
+
+/* 3. CONTENT BLOCKS
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#fav-slide,
+#fav-intro,
+#fav-showcase,
+#fav-promo,
+#fav-top,
+#fav-maintop,
+#fav-bottom,
+#fav-user,
+#fav-footer {
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+/* Mobile */
+@media handheld,
+only screen and (max-width: 767px) {
 
   #fav-slide,
   #fav-intro,
@@ -612,558 +708,621 @@ body {
   #fav-bottom,
   #fav-user,
   #fav-footer {
-    padding-top: 11px;
-    padding-bottom: 10px;
-  }
-  /* Mobile */
-  @media handheld, only screen and (max-width: 767px) {
-
-    #fav-slide,
-    #fav-intro,
-    #fav-showcase,
-    #fav-promo,
-    #fav-top,
-    #fav-maintop,
-    #fav-bottom,
-    #fav-user,
-    #fav-footer {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  /* SLIDE
+}
+
+/* SLIDE
   ---------------------------------------------------------------------------- */
 
-  #fav-slide .moduletable li,
-  #fav-slide div[class^="moduletable-"] li,
-  #fav-slide div[class*=" moduletable-"] li {
-    background: none;
-  }
+#fav-slide .moduletable li,
+#fav-slide div[class^="moduletable-"] li,
+#fav-slide div[class*=" moduletable-"] li {
+  background: none;
+}
+
+#fav-slide .moduletable li ul,
+#fav-slide div[class^="moduletable-"] li ul,
+#fav-slide div[class*=" moduletable-"] li ul {
+  margin-bottom: 14px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
   #fav-slide .moduletable li ul,
   #fav-slide div[class^="moduletable-"] li ul,
   #fav-slide div[class*=" moduletable-"] li ul {
-    margin-bottom: 14px;
+    margin-bottom: 0;
   }
 
-  /* Mobile */
-  @media (max-width: 767px) {
+}
 
-    #fav-slide .moduletable li ul,
-    #fav-slide div[class^="moduletable-"] li ul,
-    #fav-slide div[class*=" moduletable-"] li ul {
-      margin-bottom: 0;
-    }
-
-  }
-
-  /* BREADCRUMBS
+/* BREADCRUMBS
   ---------------------------------------------------------------------------- */
+
+#fav-breadcrumbs .moduletable,
+#fav-breadcrumbs div[class^="moduletable-"],
+#fav-breadcrumbs div[class*=" moduletable-"] {
+  font-size: 0.9em;
+  margin: 5px 0px 2px;
+}
+
+#fav-breadcrumbs .moduletable img,
+#fav-breadcrumbs div[class^="moduletable-"] img,
+#fav-breadcrumbs div[class*=" moduletable-"] img {
+  display: none;
+}
+
+/* Mobile */
+@media handheld,
+only screen and (max-width: 767px) {
 
   #fav-breadcrumbs .moduletable,
   #fav-breadcrumbs div[class^="moduletable-"],
   #fav-breadcrumbs div[class*=" moduletable-"] {
-    font-size: 0.9em;
-    margin: 5px 0px 2px;
-  }
-  #fav-breadcrumbs .moduletable img,
-  #fav-breadcrumbs div[class^="moduletable-"] img,
-  #fav-breadcrumbs div[class*=" moduletable-"] img {
-    display: none;
-  }
-
-  /* Mobile */
-  @media handheld, only screen and (max-width: 767px) {
-
-    #fav-breadcrumbs .moduletable,
-    #fav-breadcrumbs div[class^="moduletable-"],
-    #fav-breadcrumbs div[class*=" moduletable-"] {
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-  }
-
-  /* TOP
-  ---------------------------------------------------------------------------- */
-
-  #fav-topwrap {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin-top: 14px;
-    margin-bottom: 18px;
-  }
-
-
-  /* MAIN
-  ---------------------------------------------------------------------------- */
-
-  #fav-messagewrap .row-fluid [class*="span"] {
-    min-height:0;
-  }
-  #system-message {
     margin-top: 10px;
-  }
-  #fav-mainwrap .row-fluid [class*="span"] {
-    min-height: 10px;
+    margin-bottom: 0;
   }
 
-  /* BACKTOP
+}
+
+/* TOP
   ---------------------------------------------------------------------------- */
 
-  a.backtop i {
-    background-color: #777;
-    color: #FFFFFF;
-    font-size: 2em;
-    padding-right: 0;
-    padding: 0.3em 0.5em;
-    display: block;
-    border-radius: 4px;
-    -o-transition: all 300ms linear;
-    transition: all 300ms linear;
-  }
-  .backtop i:hover {
-    opacity: 0.8;
-  }
+#fav-topwrap {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+
+/* MAIN
+  ---------------------------------------------------------------------------- */
+
+#fav-messagewrap .row-fluid [class*="span"] {
+  min-height: 0;
+}
+
+#system-message {
+  margin-top: 10px;
+}
+
+#fav-mainwrap .row-fluid [class*="span"] {
+  min-height: 10px;
+}
+
+/* BACKTOP
+  ---------------------------------------------------------------------------- */
+
+a.backtop i {
+  background-color: #777;
+  color: #FFFFFF;
+  font-size: 2em;
+  padding-right: 0;
+  padding: 0.3em 0.5em;
+  display: block;
+  border-radius: 4px;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.backtop i:hover {
+  opacity: 0.8;
+}
+
+#fav-backtotop {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  width: 55px;
+}
+
+#fav-backtotop .backtop {
+  float: right;
+}
+
+@media (max-width: 1199px) {
+
   #fav-backtotop {
-    position: fixed;
-    bottom: 3em;
-    right: 3em;
-    width: 55px;
-  }
-  #fav-backtotop .backtop {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 36px;
     float: right;
   }
 
-  @media (max-width: 1199px) {
+}
 
-    #fav-backtotop {
-      position: relative;
-      bottom: 0;
-      right: 0;
-      margin-bottom: 36px;
-      float: right;
-    }
+/* Mobile */
+@media (min-width: 768px) {
 
-  }
-
-  /* Mobile */
-  @media (min-width: 768px) {
-
-    #fav-backtotop-mobile {
-      display: none;
-    }
-
-  }
-  @media handheld, only screen and (max-width: 767px) {
-
-    #fav-backtotop {
-      display: none;
-    }
-    #fav-backtotop-mobile {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-  }
-
-  /* IE */
-  .lt-ie9 #fav-backtotop {
-    padding-bottom: 1em;
-  }
-  .lt-ie9 #fav-backtotop-mobile {
+  #fav-backtotop-mobile {
     display: none;
   }
 
-  /* MOBILE PARAMETERS
-  ---------------------------------------------------------------------------- */
+}
 
-  @media (max-width: 480px) {
-    #fav-main img,
-    .moduletable .custom img,
-    div[class^="moduletable-"] div[class^="custom-"] img,
-    div[class*=" moduletable-"] div[class*=" custom-"] img,
-    .img-left,
-    .img-right {
-      display: inline-block ;
-    }
+@media handheld,
+only screen and (max-width: 767px) {
 
-    #fav-advertwrap,
-    #fav-intro1, #fav-intro2, #fav-intro3, #fav-intro4,
-    #fav-slide1, #fav-slide2,
-    #fav-showcase1, #fav-showcase2, #fav-showcase3, #fav-showcase4,
-    #fav-promo1, #fav-promo2, #fav-promo3,
-    #fav-top1, #fav-top2, #fav-top3, #fav-top4,
-    #fav-maintop1, #fav-maintop2, #fav-maintop3,
-    #fav-sidebar1, #fav-sidebar2,
-    #fav-mainbottom1, #fav-mainbottom2, #fav-mainbottom3,
-    #fav-bottom1, #fav-bottom2, #fav-bottom3, #fav-bottom4,
-    #fav-user1, #fav-user2, #fav-user3,
-    #fav-footer1, #fav-footer2, #fav-footer3, #fav-footer4,
-    #fav-debug {
-      display: block ;
-    }
+  #fav-backtotop {
+    display: none;
   }
 
+  #fav-backtotop-mobile {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-  /* 4. EXTENSIONS
+}
+
+/* IE */
+.lt-ie9 #fav-backtotop {
+  padding-bottom: 1em;
+}
+
+.lt-ie9 #fav-backtotop-mobile {
+  display: none;
+}
+
+/* MOBILE PARAMETERS
+  ---------------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+  #fav-main img,
+  .moduletable .custom img,
+  div[class^="moduletable-"] div[class^="custom-"] img,
+  div[class*=" moduletable-"] div[class*=" custom-"] img,
+  .img-left,
+  .img-right {
+    display: inline-block;
+  }
+
+  #fav-advertwrap,
+  #fav-intro1,
+  #fav-intro2,
+  #fav-intro3,
+  #fav-intro4,
+  #fav-slide1,
+  #fav-slide2,
+  #fav-showcase1,
+  #fav-showcase2,
+  #fav-showcase3,
+  #fav-showcase4,
+  #fav-promo1,
+  #fav-promo2,
+  #fav-promo3,
+  #fav-top1,
+  #fav-top2,
+  #fav-top3,
+  #fav-top4,
+  #fav-maintop1,
+  #fav-maintop2,
+  #fav-maintop3,
+  #fav-sidebar1,
+  #fav-sidebar2,
+  #fav-mainbottom1,
+  #fav-mainbottom2,
+  #fav-mainbottom3,
+  #fav-bottom1,
+  #fav-bottom2,
+  #fav-bottom3,
+  #fav-bottom4,
+  #fav-user1,
+  #fav-user2,
+  #fav-user3,
+  #fav-footer1,
+  #fav-footer2,
+  #fav-footer3,
+  #fav-footer4,
+  #fav-debug {
+    display: block;
+  }
+}
+
+
+/* 4. EXTENSIONS
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-  /* FAVSLIDER
+/* FAVSLIDER
   ---------------------------------------------------------------------------- */
-  div[id^="slider-"].favslider,
-  div[id*=" slider-"].favslider {
+div[id^="slider-"].favslider,
+div[id*=" slider-"].favslider {
+  position: relative;
+}
+
+.favslider .fav-next,
+.favslider .fav-prev {
+  opacity: 1;
+}
+
+.favslider:hover .fav-next:hover,
+.favslider:hover .fav-prev:hover {
+  opacity: 0.8;
+}
+
+.favslider .fav-prev,
+.favslider:hover .fav-prev {
+  left: 5px !important;
+}
+
+.favslider .fav-next,
+.favslider:hover .fav-next {
+  right: 5px !important;
+}
+
+#fav-caption {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 36%;
+  bottom: auto;
+  width: 60%;
+  padding: 21px;
+  text-shadow: none;
+  background-color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+}
+
+#fav-caption h3 {
+  font-size: 31px;
+  color: #333;
+  margin: 6px 0 4px;
+  padding: 0;
+  line-height: 1.2em;
+  text-transform: none;
+  text-align: center;
+  font-weight: 300;
+  border: none;
+}
+
+#fav-caption p {
+  color: #333;
+  text-align: center;
+}
+
+@media handheld,
+only screen and (max-width: 990px) {
+
+  #fav-caption h3 {
+    font-size: 30px;
+  }
+
+}
+
+@media handheld,
+only screen and (max-width: 767px) {
+
+  #fav-caption {
+    top: 30%;
+  }
+
+  #fav-caption h3 {
+    font-size: 26px;
+    margin-bottom: 0.6em;
+  }
+}
+
+@media handheld,
+only screen and (max-width: 600px) {
+
+  #fav-caption {
+    top: 19%;
+  }
+
+  #fav-caption h3 {
+    font-size: 1.2em;
+  }
+
+  #fav-caption p {
+    font-size: 0.9em;
+  }
+
+}
+
+@media handheld,
+only screen and (max-width: 480px) {
+
+  #fav-caption {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 17%;
+  }
+
+  #fav-caption h3 {
+    font-size: 1em;
+  }
+
+  #fav-caption p {
+    font-size: 0.8em;
+  }
+
+  .fav-direction-nav {
+    display: none;
+  }
+
+}
+
+/* IE */
+.lt-ie9 #fav-caption {
+  background-color: #FFFFFF;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=67)";
+  filter: alpha(opacity=67);
+  padding: 1% 3% 2%;
+}
+
+
+/* FAVGLYPH
+  ---------------------------------------------------------------------------- */
+
+.favdemo .favglyph-icon-center h2 {
+  font-weight: 400 !important;
+}
+
+.favdemo #favglyph .favglyph-icon-center i {
+  color: #0099ff;
+}
+
+.favdemo .favglyph-icon-left #favglyph,
+.favdemo .favglyph-icon-right #favglyph {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.favdemo .favglyph-icon-left #favglyph-icon,
+.favdemo .favglyph-icon-right #favglyph-icon {
+  border-color: #0099ff;
+}
+
+.favdemo #favglyph .favglyph-icon-left i,
+.favdemo #favglyph .favglyph-icon-right i {
+  background-color: #0099ff;
+}
+
+
+/* FAVSOCIAL
+  ---------------------------------------------------------------------------- */
+
+.favdemo div[id^="favsocial"] a,
+.favdemo div[id*=" favsocial"] a {
+  border: 1px solid #ddd;
+}
+
+.favdemo ul#favsocial-list {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.favdemo #favsocial {
+  margin-top: 3px;
+}
+
+
+/* FAVEFFECTS
+  ---------------------------------------------------------------------------- */
+
+.favdemo #faveffects {
+  margin-top: 40px;
+}
+
+.favdemo #faveffects i {
+  color: #0099ff;
+}
+
+.favdemo #faveffects i:hover {
+  color: #444 !important;
+}
+
+.favdemo #faveffects p[id^="faveffects-title"] a,
+.favdemo #faveffects p[id*=" faveffects-title"] a {
+  font-weight: 300;
+}
+
+@media handheld,
+only screen and (max-width: 990px) {
+
+  .favdemo #faveffects p[id^="faveffects-title"],
+  .favdemo #faveffects p[id*=" faveffects-title"] {
+    font-size: 16px !important;
+  }
+
+}
+
+@media handheld,
+only screen and (max-width: 767px) {
+
+  .favdemo #faveffects p[id^="faveffects-title"],
+  .favdemo #faveffects p[id*=" faveffects-title"] {
+    font-size: 14px !important;
+  }
+
+}
+
+@media handheld,
+only screen and (max-width: 480px) {
+
+  .favdemo #faveffects p[id^="faveffects-title"],
+  .favdemo #faveffects p[id*=" faveffects-title"] {
+    font-size: 21px !important;
+  }
+
+}
+
+
+/* 5. CUSTOM STYLES
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#fav-download p {
+  margin: 0;
+}
+
+#fav-download #fav-download-message {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.3em;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#fav-download #fav-download-btn {
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+#fav-download a.btn.btn-primary.btn-large {
+  margin-bottom: 9px;
+}
+
+/* Mobile */
+@media handheld,
+only screen and (max-width: 1199px) {
+
+  #fav-download #fav-download-message {
+    float: none;
+    text-align: center;
+    padding: 4px 0 21px;
+  }
+
+  #fav-download #fav-download-btn {
+    float: none;
+    font-size: 16px;
+    text-align: center;
+    bottom: 4px;
+    margin-top: 4px;
     position: relative;
   }
-  .favslider .fav-next,
-  .favslider .fav-prev {
-    opacity: 1;
+
+}
+
+/* Maurice var extra */
+/* I DONT Fucking know why this hack is necessary Oo, old bootrap version is buggy af */
+.row {
+  margin-left: 0 !important;
+}
+
+#fav-main ul,
+#fav-main ol {
+  margin: 0;
+}
+
+cite {
+  display: block;
+  font-size: 0.9em;
+}
+
+cite::before {
+  content: '\2014 \0020'
+}
+
+.span4 cite {
+  margin-bottom: 2em;
+}
+
+li cite {
+  text-indent: 1em;
+}
+
+.item-page ul li.latestnews-item::before {
+  content: '';
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .item-page p img {
+    float: none !important;
+    width: 100%;
   }
-  .favslider:hover .fav-next:hover,
-  .favslider:hover .fav-prev:hover {
-    opacity: 0.8;
-  }
-  .favslider .fav-prev,
-  .favslider:hover .fav-prev {
-    left: 5px!important;
-  }
-  .favslider .fav-next,
-  .favslider:hover .fav-next {
-    right: 5px!important;
-  }
-  #fav-caption {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 36%;
-    bottom: auto;
-    width: 60%;
-    padding: 21px;
-    text-shadow: none;
-    background-color: rgba(255, 255, 255, 0.87);
-    cursor: pointer;
-  }
-  #fav-caption h3 {
-    font-size: 31px;
-    color: #333;
-    margin: 6px 0 4px;
-    padding: 0;
-    line-height: 1.2em;
-    text-transform: none;
-    text-align:center;
-    font-weight: 300;
-    border: none;
-  }
-  #fav-caption p {
-    color: #333;
-    text-align:center;
-  }
+}
 
-  @media handheld, only screen and (max-width: 990px) {
+.moduletable_box {
+  margin-top: 3em;
+}
 
-    #fav-caption h3 {
-      font-size: 30px;
-    }
+.moduletable_box .custom_box {
+  border-radius: 10px;
+  background: #78D200;
+  background: linear-gradient(to bottom right, #78D200, #BED200);
+  color: #222;
+  box-shadow: 1x 1px 1px 0px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
 
-  }
+.moduletable_box .custom_box img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-  @media handheld, only screen and (max-width: 767px) {
+.moduletable_box .custom_box div {
+  padding: 0.5em 1em 1em;
+  text-align: center;
+}
 
-    #fav-caption {
-      top: 30%;
-    }
-    #fav-caption h3 {
-      font-size: 26px;
-      margin-bottom: 0.6em;
-    }
-  }
+.moduletable_box .custom_box a {
+  color: #333;
+  text-decoration: underline;
+}
 
-  @media handheld, only screen and (max-width: 600px) {
+.moduletable_box .custom_box a:hover {
+  text-decoration: none;
+}
 
-    #fav-caption {
-      top: 19%;
-    }
-    #fav-caption h3 {
-      font-size: 1.2em;
-    }
-    #fav-caption p {
-      font-size: 0.9em;
-    }
+.moduletable_box .custom_box .button, .flatbutton {
+  text-decoration: none;
+  background: #fffd;
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 0.7em;
+}
 
-  }
+.moduletable_box .custom_box .button:hover {
+  background: #fffc;
+}
 
-  @media handheld, only screen and (max-width: 480px) {
+#fav-navbar .navbar-inner {
+  background-image: none;
+  border-radius: 0;
+}
 
-    #fav-caption {
-      top: 0;
-      width: 100%;
-      height: 100%;
-      padding: 0;
-      padding-top: 17%;
-    }
-    #fav-caption h3 {
-      font-size: 1em;
-    }
-    #fav-caption p {
-      font-size: 0.8em;
-    }
+#fav-navbar .navbar-inner .btn-navbar {
+  background-image: none;
+  border-radius: 0;
+}
 
-    .fav-direction-nav {
-      display: none;
-    }
-
-  }
-
-   /* IE */
-  .lt-ie9 #fav-caption {
-    background-color: #FFFFFF;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=67)";
-    filter: alpha(opacity=67);
-    padding: 1% 3% 2%;
-  }
-
-
-  /* FAVGLYPH
-  ---------------------------------------------------------------------------- */
-
-  .favdemo .favglyph-icon-center h2 {
-    font-weight: 400!important;
-  }
-  .favdemo #favglyph .favglyph-icon-center i {
-    color: #0099ff;
-  }
-  .favdemo .favglyph-icon-left #favglyph,
-  .favdemo .favglyph-icon-right #favglyph {
-    margin-top: 0;
-    margin-bottom: 21px;
-  }
-  .favdemo .favglyph-icon-left #favglyph-icon,
-  .favdemo .favglyph-icon-right #favglyph-icon {
-    border-color: #0099ff;
-  }
-  .favdemo #favglyph .favglyph-icon-left i,
-  .favdemo #favglyph .favglyph-icon-right i {
-    background-color: #0099ff;
-  }
-
-
-  /* FAVSOCIAL
-  ---------------------------------------------------------------------------- */
-
-  .favdemo div[id^="favsocial"] a,
-  .favdemo div[id*=" favsocial"] a {
-    border: 1px solid #ddd;
-  }
-  .favdemo ul#favsocial-list {
-    display: table;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .favdemo #favsocial {
-    margin-top: 3px;
-  }
-
-
-  /* FAVEFFECTS
-  ---------------------------------------------------------------------------- */
-
-  .favdemo #faveffects {
-    margin-top: 40px;
-  }
-  .favdemo #faveffects i {
-    color: #0099ff;
-  }
-  .favdemo #faveffects i:hover {
-    color: #444!important;
-  }
-  .favdemo #faveffects p[id^="faveffects-title"] a,
-  .favdemo #faveffects p[id*=" faveffects-title"] a {
-    font-weight: 300;
-  }
-  @media handheld, only screen and (max-width: 990px) {
-
-    .favdemo #faveffects p[id^="faveffects-title"],
-    .favdemo #faveffects p[id*=" faveffects-title"] {
-      font-size: 16px!important;
-    }
-
-  }
-  @media handheld, only screen and (max-width: 767px) {
-
-    .favdemo #faveffects p[id^="faveffects-title"],
-    .favdemo #faveffects p[id*=" faveffects-title"] {
-      font-size: 14px!important;
-    }
-
-  }
-  @media handheld, only screen and (max-width: 480px) {
-
-    .favdemo #faveffects p[id^="faveffects-title"],
-    .favdemo #faveffects p[id*=" faveffects-title"] {
-      font-size: 21px!important;
-    }
-
-  }
-
-
-  /* 5. CUSTOM STYLES
-  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-  #fav-download p {
-    margin: 0;
-  }
-  #fav-download #fav-download-message {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 1.3em;
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-  #fav-download #fav-download-btn {
-    float: right;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 4px;
-  }
-  #fav-download a.btn.btn-primary.btn-large {
-    margin-bottom: 9px;
-  }
-
-  /* Mobile */
-  @media handheld, only screen and (max-width: 1199px) {
-
-   #fav-download #fav-download-message {
-      float: none;
-      text-align: center;
-      padding: 4px 0 21px;
-    }
-    #fav-download #fav-download-btn {
-      float: none;
-      font-size: 16px;
-      text-align: center;
-      bottom: 4px;
-      margin-top: 4px;
-      position: relative;
-    }
-
-  }
-
-  /* Maurice var extra */
-  /* I DONT Fucking know why this hack is necessary Oo, old bootrap version is buggy af */
-  .row {
-    margin-left: 0!important;
-  }
-
-  #fav-main ul, #fav-main ol {
-    margin: 0;
-  }
-
-  cite {
-    display: block;
-    font-size: 0.9em;
-  }
-
-  cite::before {
-    content: '\2014 \0020'
-  }
-
-  .span4 cite {
-    margin-bottom: 2em;
-  }
-
-  li cite {
-    text-indent: 1em;
-  }
-
-  .item-page ul li.latestnews-item::before {
-    content: '';
+@media (min-width: 768px) {
+  .fav-control-nav {
     display: none;
   }
+}
 
-  @media (max-width: 767px) {
-    .item-page p img {
-      float: none !important;
-      width: 100%;
-    }
-  }
+#fav-footer {
+  border-top: 1px solid #ddd;
+  margin-top: 2px;
+}
 
-  .moduletable_box {
-    margin-top: 3em;
-  }
+.flatbutton {
+  padding: 0.5em;
+  border: 1px solid #e6e6e6;
+  margin: 1em 0;
+  text-align: center;
+}
 
-  .moduletable_box .custom_box {
-    border-radius: 10px;
-    background: #78D200;
-    background: linear-gradient(to bottom right, #78D200, #BED200);
-    color: #222;
-    box-shadow: 1x 1px 1px 0px rgba(0,0,0,0.3);
-    text-shadow: 0px 1px 0px rgba(255,255,255,0.3);
-  }
-
-  .moduletable_box .custom_box img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-
-  .moduletable_box .custom_box div{
-    padding: 0.5em 1em 1em;
-    text-align: center;
-  }
-
-  .moduletable_box .custom_box a {
-    color: #333;
-    text-decoration: underline;
-  }
-
-  .moduletable_box .custom_box a:hover {
-    text-decoration: none;
-  }
-
-  .moduletable_box .custom_box .button {
-    text-decoration: none;
-    background: #fffd;
-    padding: 0.2em 0.6em;
-    border-radius: 4px;
-    font-weight: bold;
-    box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
-    display: inline-block;
-    margin-top: 0.7em;
-  }
-
-  .moduletable_box .custom_box .button:hover {
-    background: #fffc;
-  }
-
-  #fav-navbar .navbar-inner {
-    background-image: none;
-    border-radius: 0;
-  }
-
-  #fav-navbar .navbar-inner .btn-navbar {
-    background-image: none;
-    border-radius: 0;
-  }
-
-  @media (min-width: 768px) {
-    .fav-control-nav {
-      display: none;
-    }
-  }
-
-  #fav-footer {
-    border-top: 1px solid #ddd;
-    margin-top: 2px;
-  }
-
-  .flatbutton {
-    padding: 0.5em;
-    line-height: 2em;
-    box-sizing: border-box;
-    border: 1px solid #e6e6e6;
-    display: block;
-    border-radius: 5px;
-  }
+.row div img {
+  display: block;
+  margin: 0 auto;
+}
