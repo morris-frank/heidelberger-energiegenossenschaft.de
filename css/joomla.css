@@ -2512,7 +2512,7 @@ blockquote:before {
   font-style: normal;
   text-decoration: inherit;
   float: left;
-  color: #008282;
+  color: #108283;
   font-size: 107px;
   content: "„";
   font-size: 107px;
@@ -2884,7 +2884,7 @@ fieldset[disabled] .btn-danger.active {
 
 .btn-link {
   font-weight: normal;
-  color: #008282;
+  color: #108283;
   cursor: pointer;
   border-radius: 0;
   background-image: none;
@@ -2910,7 +2910,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #8CF000;
+  color: #80ba26;
   text-decoration: underline;
   background-color: transparent;
 }

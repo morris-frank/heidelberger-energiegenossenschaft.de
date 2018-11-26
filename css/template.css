@@ -237,7 +237,7 @@ only screen and (max-width: 768px) {
 #fav-nav .navigation .nav-pills>.active>a,
 #fav-nav .navigation .nav-pills>li>a:hover,
 .flatbutton:hover {
-  background-color: #0099FF;
+  background-color: #80ba26;
   color: #fff;
   text-decoration: none;
 }
@@ -1285,7 +1285,6 @@ li cite {
   padding: 0.2em 0.6em;
   border-radius: 4px;
   font-weight: bold;
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
   display: inline-block;
   margin-top: 0.7em;
 }
@@ -1316,10 +1315,11 @@ li cite {
 }
 
 .flatbutton {
-  padding: 0.5em;
-  border: 1px solid #e6e6e6;
+  padding: 0.7em;
   margin: 1em 0;
   text-align: center;
+  background: #108283;
+  color: #fff;
 }
 
 .row div img {

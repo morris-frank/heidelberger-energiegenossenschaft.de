@@ -2,7 +2,7 @@
 
 Theme Name: Favourite
 Theme URL: http://demo.favthemes.com/favourite/
-Description: Responsive and Customizable Joomla! Framework 
+Description: Responsive and Customizable Joomla! Framework
 Author: FavThemes
 Author URI: http://www.favthemes.com
 Bootstrap Authors: @mdo and @fat
@@ -21,64 +21,57 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 
 /* Links */
 a {
-  color: #008282;
+  color: #108283;
 }
-/* Navigation */
-#fav-nav .navigation .nav-pills > .active > a, 
-#fav-nav .navigation .nav-pills > li > a:hover,
-.flatbutton:hover {
-  background-color: #008282;
-	color: #fff;
-}
-#fav-nav .navigation .nav-pills .nav-child > .active > a, 
+#fav-nav .navigation .nav-pills .nav-child > .active > a,
 #fav-nav .navigation .nav-pills .nav-child > li > a:hover {
-  color: #008282;
+  color: #108283;
 }
 /* Copyright */
-#fav-copyright ul.nav.menu li.active a, 
-#fav-copyright ul.nav.menu li a:hover, 
-#fav-copyright ul.nav.menu li:hover a { 
-  color: #008282;  
+#fav-copyright ul.nav.menu li.active a,
+#fav-copyright ul.nav.menu li a:hover,
+#fav-copyright ul.nav.menu li:hover a {
+  color: #108283;
 }
 
-/* JOOMLA! CSS  
+/* JOOMLA! CSS
 ---------------------------------------------------------------------------- */
 
 /* Article Title */
-.page-header h2 a:hover, 
-h2.item-title a:hover { 
-	color: #008282; 
+.page-header h2 a:hover,
+h2.item-title a:hover {
+	color: #108283;
 }
 /* Article Info */
-ul.dropdown-menu a:hover { 
-  color: #008282; 
+ul.dropdown-menu a:hover {
+  color: #108283;
   background-color: transparent;
-  background-image:none;  
+  background-image:none;
 }
 /* Create Article */
 div.edit button.btn.btn-primary {
-  background-color: #008282; 
-  color: #fff; 
-  border: 1px solid #008282;
+  background-color: #108283;
+  color: #fff;
+  border: 1px solid #108283;
 }
 div.edit button.btn.btn-primary:hover {
-  background-color: #008282;
-  border: 1px solid #008282;
+  background-color: #108283;
+  border: 1px solid #108283;
 }
 /* Buttons */
-.btn-primary { 
-  background-color: #008282; 
-  border: 1px solid #008282;
+.btn-primary {
+  background-color: #108283;
+  border: 1px solid #108283;
   color: #ffffff;
 }
-.btn-primary:hover { 
-  background-color: #008282;
-  border: 1px solid #008282;
+.btn-primary:hover {
+  background-color: #108283;
+  border: 1px solid #108283;
   color: #ffffff;
 }
 /* Badge */
 .badge-info {
-background-color: #008282;
+background-color: #108283;
 }
 /* Menu Basic */
 .moduletable ul.nav.menubasic li.current,
@@ -90,71 +83,71 @@ div[class*=" moduletable-"] ul.nav.menubasic li.current.active.deeper.parent,
 .moduletable .menubasic li.active ul.nav-child:hover li.current.active.deeper.parent,
 div[class^="moduletable-"] .menubasic li.active ul.nav-child:hover li.current.active.deeper.parent,
 div[class*=" moduletable-"] .menubasic li.active ul.nav-child:hover li.current.active.deeper.parent {
-  background-color: #008282;
+  background-color: #108283;
 	color: #fff;
 }
 .moduletable ul.nav.menubasic li.current ul.nav-child a,
 div[class^="moduletable-"] ul.nav.menubasic li.current ul.nav-child a,
 div[class*=" moduletable-"] ul.nav.menubasic li.current ul.nav-child a {
-	color: #008282;
+	color: #108283;
 }
 /* Pagination */
 .pagination ul li.active a {
-	color: #008282;
+	color: #108283;
 }
 /* Variation 2 */
 .moduletable-sfx2 h3 {
-	border-bottom: 1px solid #008282;
+	border-bottom: 1px solid #108283;
 }
 .moduletable-sfx2 h3 i {
-	background-color: #008282;
+	background-color: #108283;
 	color: #FFF;
 }
 /* Variation 3 */
 .moduletable-sfx3 h3 {
-	border-bottom: 1px solid #008282;
+	border-bottom: 1px solid #108283;
 }
 .moduletable-sfx3 h3 i {
-	background-color: #008282;
+	background-color: #108283;
 	color: #FFF;
 }
 /* Variation 5 */
 .moduletable-sfx5 h3 {
-	border-bottom: 1px solid #008282;
+	border-bottom: 1px solid #108283;
 }
 .moduletable-sfx5 h3 i {
-	background-color: #008282;
+	background-color: #108283;
 	color: #FFF;
 }
 /* Variation 6 */
 .moduletable-sfx6 h3 {
-	border-bottom: 1px solid #008282;
+	border-bottom: 1px solid #108283;
 }
 .moduletable-sfx6 h3 i {
-	background-color: #008282;
+	background-color: #108283;
 	color: #FFF;
 }
 /* Variation 7 */
 .moduletable-sfx7 {
 	color: #fff;
-	background-color: #008282;
+	background-color: #108283;
 }
 /* Variation 8 */
 .moduletable-sfx8 {
 	color: #fff;
-	background-color: #008282;
+	background-color: #108283;
 }
 .moduletable-sfx8 h3 i {
-	color: #008282;
+	color: #108283;
 	background-color: #fff;
 }
 /* Variation 9 */
 .moduletable-sfx9 {
 	color: #fff;
-	background-color: #008282;
+	background-color: #108283;
 }
 .moduletable-sfx9 h3 i {
-	color: #008282;
+	color: #108283;
 	background-color: #fff;
 }
 
@@ -164,48 +157,48 @@ div[class*=" moduletable-"] ul.nav.menubasic li.current ul.nav-child a {
 
 /* Category Title */
 div.itemListCategory h2:before {
-  color: #008282;
+  color: #108283;
 }
 /* Category Item Title */
 div.catItemHeader h3.catItemTitle a:hover {
-	color: #008282; 
+	color: #108283;
 }
 /* Category Item Featured  */
-div.itemIsFeatured h2:before, 
-div.catItemIsFeatured h3:before, 
+div.itemIsFeatured h2:before,
+div.catItemIsFeatured h3:before,
 div.userItemIsFeatured h3:before {
-	color: #008282;
+	color: #108283;
 	background-color: #fff;
 }
 /* K2 Pagination  */
 div.k2Pagination ul li.active a {
-	color: #008282;
+	color: #108283;
 }
 /* Latest Items Title */
 div.latestItemsCategory h2:before {
-  color: #008282;
+  color: #108283;
 }
 /* K2 User */
 div.k2LoginBlock fieldset.input input.button,
 div.k2UserBlock form input.button.ubLogout {
-	background-color: #008282; 
-  color: #fff; 
-  border: 1px solid #008282;
+	background-color: #108283;
+  color: #fff;
+  border: 1px solid #108283;
 }
 div.k2LoginBlock fieldset.input input.button:hover,
 div.k2UserBlock form input.button.ubLogout:hover {
-	background-color: #008282;
-  border: 1px solid #008282;
+	background-color: #108283;
+  border: 1px solid #108283;
 }
 /* User Profile */
 .k2AccountPage button.button.validate {
-	background-color: #008282; 
-  color: #fff; 
-  border: 1px solid #008282;
+	background-color: #108283;
+  color: #fff;
+  border: 1px solid #108283;
 }
-.k2AccountPage button.button.validate:hover { 
-  background-color: #008282;
-  border: 1px solid #008282;
+.k2AccountPage button.button.validate:hover {
+  background-color: #108283;
+  border: 1px solid #108283;
 }
 
 /* EXTENSIONS
@@ -213,17 +206,17 @@ div.k2UserBlock form input.button.ubLogout:hover {
 
 /* FavGlyph */
 .favdemo #favglyph .favglyph-icon-center i {
-	color: #008282!important;
+	color: #108283!important;
 }
 .favdemo .favglyph-icon-left #favglyph-icon,
 .favdemo .favglyph-icon-right #favglyph-icon {
-	border-color: #008282!important;
+	border-color: #108283!important;
 }
 .favdemo #favglyph .favglyph-icon-left i,
 .favdemo #favglyph .favglyph-icon-right i {
-	background-color: #008282!important;
+	background-color: #108283!important;
 }
 /* FavEffects */
 .favdemo #faveffects i {
-	color: #008282!important;
+	color: #108283!important;
 }
